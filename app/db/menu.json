@@ -1,0 +1,5644 @@
+{
+    "items": [
+        {
+            "category": "Роллы",
+            "name": "Ролл Форилье",
+            "pieces": 8,
+            "weight_g": 178,
+            "composition": [
+                "тортилья",
+                "куриное филе жареное",
+                "сыр сливочный",
+                "помидоры",
+                "пекинская капуста",
+                "соус гриль"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 13,
+                "carbs_g": 18,
+                "calories_kcal": 233
+            },
+            "price_rub": 349
+        },
+        {
+            "category": "Роллы",
+            "name": "Филадельфия том-ям с соусом чимичурри",
+            "pieces": 4,
+            "weight_g": 130,
+            "composition": [
+                "Лосось филе",
+                "сыр сливочный",
+                "креветки темпура",
+                "соус том-ям",
+                "соус чимичурри"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 9,
+                "carbs_g": 21,
+                "calories_kcal": 199
+            },
+            "price_rub": 429
+        },
+        {
+            "category": "Роллы",
+            "name": "Филадельфия люкс",
+            "pieces": 4,
+            "weight_g": 130,
+            "composition": [
+                "Лосось филе",
+                "сыр сливочный",
+                "чука",
+                "соус унаги",
+                "соус гамадари",
+                "икра лососевая имитированная"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 9,
+                "carbs_g": 19,
+                "calories_kcal": 189
+            },
+            "price_rub": 429
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Канада",
+            "pieces": 4,
+            "weight_g": 118,
+            "composition": [
+                "Лосось",
+                "угорь жареный",
+                "огурец",
+                "сыр сливочный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 10,
+                "carbs_g": 23,
+                "calories_kcal": 230
+            },
+            "price_rub": 359
+        },
+        {
+            "category": "Роллы",
+            "name": "Закат креветки",
+            "pieces": 4,
+            "weight_g": 108,
+            "composition": [
+                "Икра масаго оранжевая",
+                "сыр сливочный",
+                "лук фри",
+                "креветки вареные",
+                "соус сырный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 12,
+                "carbs_g": 20,
+                "calories_kcal": 216
+            },
+            "price_rub": 259
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Ойси",
+            "pieces": 4,
+            "weight_g": 133,
+            "composition": [
+                "Сыр сливочный",
+                "варёные креветки",
+                "огурец",
+                "филе лосося",
+                "соус спайси",
+                "соус унаги",
+                "белый кунжут",
+                "икра лососевая имитированная"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 11,
+                "carbs_g": 17,
+                "calories_kcal": 203
+            },
+            "price_rub": 329
+        },
+        {
+            "category": "Роллы",
+            "name": "Запеченная филадельфия",
+            "pieces": 4,
+            "weight_g": 121,
+            "composition": [
+                "Лосось филе",
+                "сыр сливочный",
+                "сырный соус",
+                "унаги соус",
+                "кунжут белый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 9,
+                "carbs_g": 19,
+                "calories_kcal": 185
+            },
+            "price_rub": 349
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Нежность",
+            "pieces": 4,
+            "weight_g": 115,
+            "composition": [
+                "Лосось",
+                "сыр сливочный",
+                "соус креветочный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 12,
+                "carbs_g": 18,
+                "calories_kcal": 216
+            },
+            "price_rub": 309
+        },
+        {
+            "category": "Роллы",
+            "name": "Филадельфия под угрём",
+            "pieces": 4,
+            "weight_g": 124,
+            "composition": [
+                "Угорь жареный",
+                "огурец",
+                "сыр сливочный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 13,
+                "carbs_g": 24,
+                "calories_kcal": 249
+            },
+            "price_rub": 359
+        },
+        {
+            "category": "Роллы",
+            "name": "Филадельфия: 8 шт.",
+            "pieces": 8,
+            "weight_g": 225,
+            "composition": [
+                "Лосось",
+                "сыр сливочный",
+                "огурец"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 19,
+                "calories_kcal": 180
+            },
+            "price_rub": 600
+        },
+        {
+            "category": "Роллы",
+            "name": "Закат креветки: 8 шт.",
+            "pieces": 8,
+            "weight_g": 217,
+            "composition": [
+                "Икра масаго оранжевая",
+                "сыр сливочный",
+                "лук фри",
+                "креветки вареные",
+                "соус сырный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 12,
+                "carbs_g": 20,
+                "calories_kcal": 216
+            },
+            "price_rub": 449
+        },
+        {
+            "category": "Роллы",
+            "name": "Запеченная Филадельфия: 8 шт.",
+            "pieces": 8,
+            "weight_g": 242,
+            "composition": [
+                "Лосось филе",
+                "сыр сливочный",
+                "сырный соус",
+                "унаги соус",
+                "кунжут белый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 9,
+                "carbs_g": 19,
+                "calories_kcal": 185
+            },
+            "price_rub": 659
+        },
+        {
+            "category": "Пицца",
+            "name": "Креветка и бекон",
+            "pieces": 1,
+            "weight_g": 360,
+            "composition": [
+                "Креветки",
+                "бекон",
+                "соус спайси",
+                "сыр моцарелла",
+                "лук зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 13,
+                "carbs_g": 21,
+                "calories_kcal": 245
+            },
+            "price_rub": 555
+        },
+        {
+            "category": "Пицца",
+            "name": "Четыре сыра",
+            "pieces": 1,
+            "weight_g": 310,
+            "composition": [
+                "Дорблю (сыр с голубой плесенью)",
+                "пармезан",
+                "гауда",
+                "моцарелла",
+                "сливочная основа"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 12,
+                "carbs_g": 35,
+                "calories_kcal": 296
+            },
+            "price_rub": 525
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Салат Чука",
+            "pieces": 1,
+            "weight_g": 117,
+            "composition": [
+                "Маринованные водоросли чука",
+                "соус гамадари",
+                "капуста пекинская",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 1,
+                "fats_g": 10,
+                "carbs_g": 11,
+                "calories_kcal": 138
+            },
+            "price_rub": 210
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Соба с морепродуктами в соусе Сливочный кимчи",
+            "pieces": 1,
+            "weight_g": 320,
+            "composition": [
+                "Лапша соба",
+                "Кальмары",
+                "Креветки коктейльные",
+                "Окунь",
+                "Мидии",
+                "Лук репчатый",
+                "Морковь",
+                "Капуста пекинская"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 9,
+                "carbs_g": 14,
+                "calories_kcal": 169
+            },
+            "price_rub": 500
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Том-ям суп с креветками",
+            "pieces": 1,
+            "weight_g": 545,
+            "composition": [
+                "Креветки",
+                "грибы шампиньоны",
+                "кокосовое молоко",
+                "рис",
+                "паста том-ям",
+                "соус шрирача",
+                "чеснок",
+                "лук зеленый",
+                "кунжут черный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 5,
+                "carbs_g": 16,
+                "calories_kcal": 133
+            },
+            "price_rub": 479
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Лава с Лососем",
+            "pieces": 4,
+            "weight_g": 100,
+            "composition": [
+                "Лосось филе",
+                "сыр сливочный",
+                "соус лава (икра масаго красная",
+                "сыр сливочный",
+                "майонез)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 17,
+                "carbs_g": 21,
+                "calories_kcal": 257
+            },
+            "price_rub": 209
+        },
+        {
+            "category": "Роллы",
+            "name": "Темпурный Цезарь",
+            "pieces": 4,
+            "weight_g": 132,
+            "composition": [
+                "Жареная курица",
+                "пекинская капуста",
+                "помидор",
+                "мука",
+                "кляр",
+                "сухари панко",
+                "соус унаги",
+                "белый кунжут",
+                "соус цезарь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 11,
+                "carbs_g": 25,
+                "calories_kcal": 231
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Роллы",
+            "name": "Калифорния с лососем",
+            "pieces": 4,
+            "weight_g": 97,
+            "composition": [
+                "Лосось",
+                "огурец",
+                "авокадо",
+                "сыр сливочный",
+                "икра масаго оранжевая"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 6,
+                "carbs_g": 21,
+                "calories_kcal": 170
+            },
+            "price_rub": 279
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Император",
+            "pieces": 4,
+            "weight_g": 109,
+            "composition": [
+                "Тунец",
+                "икра лососевая имитированная",
+                "лук зеленый",
+                "сыр сливочный",
+                "огурец",
+                "соус унаги"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 7,
+                "carbs_g": 22,
+                "calories_kcal": 199
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Вертекс",
+            "pieces": 4,
+            "weight_g": 104,
+            "composition": [
+                "Лосось",
+                "креветки вареные",
+                "краб с майонезом",
+                "сыр сливочный",
+                "сырный соус",
+                "соус унаги",
+                "белый кунжут",
+                "черный кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 12,
+                "carbs_g": 23,
+                "calories_kcal": 228
+            },
+            "price_rub": 229
+        },
+        {
+            "category": "Роллы",
+            "name": "Виртуоз",
+            "pieces": 4,
+            "weight_g": 108,
+            "composition": [
+                "Лосось филе",
+                "сырный соус",
+                "сыр сливочный",
+                "огурец",
+                "унаги соус",
+                "кунжут белый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 14,
+                "carbs_g": 22,
+                "calories_kcal": 234
+            },
+            "price_rub": 289
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Факел",
+            "pieces": 4,
+            "weight_g": 117,
+            "composition": [
+                "Лосось терияки",
+                "лук зеленый",
+                "кляр",
+                "сухари панко",
+                "сыр сливочный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 10,
+                "carbs_g": 27,
+                "calories_kcal": 238
+            },
+            "price_rub": 209
+        },
+        {
+            "category": "Роллы",
+            "name": "Феникс",
+            "pieces": 4,
+            "weight_g": 97,
+            "composition": [
+                "Тунец",
+                "стружка тунца",
+                "сыр сливочный",
+                "сырный соус",
+                "соус унаги",
+                "кунжут белый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 14,
+                "fats_g": 13,
+                "carbs_g": 21,
+                "calories_kcal": 257
+            },
+            "price_rub": 209
+        },
+        {
+            "category": "Роллы",
+            "name": "Сливочный с тунцом",
+            "pieces": 4,
+            "weight_g": 99,
+            "composition": [
+                "Стружка тунца",
+                "сыр сливочный",
+                "тунец",
+                "соус спайси"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 14,
+                "fats_g": 13,
+                "carbs_g": 21,
+                "calories_kcal": 257
+            },
+            "price_rub": 209
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Сенсу",
+            "pieces": 4,
+            "weight_g": 136,
+            "composition": [
+                "Сыр сливочный",
+                "соус креветочный",
+                "такуан",
+                "кляр",
+                "сухари панко",
+                "соус унаги",
+                "черный кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 9,
+                "carbs_g": 26,
+                "calories_kcal": 213
+            },
+            "price_rub": 219
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Чатер",
+            "pieces": 4,
+            "weight_g": 103,
+            "composition": [
+                "Креветки вареные",
+                "сыр сливочный",
+                "капуста пекинская",
+                "сыр чеддер",
+                "соус спайси",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 12,
+                "carbs_g": 23,
+                "calories_kcal": 232
+            },
+            "price_rub": 199
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Геншин",
+            "pieces": 4,
+            "weight_g": 96,
+            "composition": [
+                "Тунец",
+                "сыр сливочный",
+                "лук зеленый",
+                "черный кунжут",
+                "белый кунжут",
+                "спайси соус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 14,
+                "carbs_g": 22,
+                "calories_kcal": 258
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Лава с Креветкой",
+            "pieces": 4,
+            "weight_g": 100,
+            "composition": [
+                "Креветки вареные",
+                "сыр сливочный",
+                "соус лава (икра масаго красная",
+                "сыр сливочный",
+                "майонез)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 16,
+                "carbs_g": 21,
+                "calories_kcal": 252
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Лава с Крабом",
+            "pieces": 4,
+            "weight_g": 100,
+            "composition": [
+                "Краб с майонезом",
+                "сыр сливочный",
+                "соус лава (икра масаго красная",
+                "сыр сливочный",
+                "майонез)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 17,
+                "carbs_g": 22,
+                "calories_kcal": 257
+            },
+            "price_rub": 159
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Лава с Креветкой Запеченный",
+            "pieces": 4,
+            "weight_g": 103,
+            "composition": [
+                "Креветки вареные",
+                "сыр сливочный",
+                "соус лава (икра масаго красная",
+                "сыр сливочный",
+                "майонез)",
+                "унаги соус",
+                "кунжут белый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 16,
+                "carbs_g": 22,
+                "calories_kcal": 256
+            },
+            "price_rub": 199
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Лава с Лососем Запеченный",
+            "pieces": 4,
+            "weight_g": 103,
+            "composition": [
+                "Лосось филе",
+                "сыр сливочный",
+                "соус лава (икра масаго красная",
+                "сыр сливочный",
+                "майонез)",
+                "соус унаги",
+                "кунжут белый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 17,
+                "carbs_g": 22,
+                "calories_kcal": 261
+            },
+            "price_rub": 219
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Запеченный сенсей",
+            "pieces": 4,
+            "weight_g": 98,
+            "composition": [
+                "Лосось филе",
+                "огурец",
+                "сыр сливочный",
+                "сырный соус",
+                "кунжут белый",
+                "кунжут черный",
+                "унаги соус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 13,
+                "carbs_g": 23,
+                "calories_kcal": 233
+            },
+            "price_rub": 289
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Кентавр",
+            "pieces": 4,
+            "weight_g": 162,
+            "composition": [
+                "Куриное филе жареное",
+                "сыр сливочный",
+                "огурец",
+                "сырный соус",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 16,
+                "carbs_g": 20,
+                "calories_kcal": 252
+            },
+            "price_rub": 329
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Чикен белс",
+            "pieces": 4,
+            "weight_g": 95,
+            "composition": [
+                "Стружка тунца бонито",
+                "куриное филе жареное",
+                "помидор",
+                "сыр сливочный",
+                "соус спайси",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 12,
+                "carbs_g": 23,
+                "calories_kcal": 224
+            },
+            "price_rub": 179
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Зелёная миля",
+            "pieces": 4,
+            "weight_g": 96,
+            "composition": [
+                "Креветки темпура",
+                "сыр сливочный",
+                "соус сырный Heinz"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 5,
+                "carbs_g": 27,
+                "calories_kcal": 181
+            },
+            "price_rub": 199
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Пирамида",
+            "pieces": 4,
+            "weight_g": 108,
+            "composition": [
+                "Креветка вареная",
+                "сыр сливочный",
+                "огурец",
+                "сырный соус",
+                "унаги соус",
+                "кунжут черный",
+                "кунжут белый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 12,
+                "carbs_g": 22,
+                "calories_kcal": 220
+            },
+            "price_rub": 209
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Эльбрус",
+            "pieces": 4,
+            "weight_g": 92,
+            "composition": [
+                "Сыр сливочный",
+                "речной угорь жареный",
+                "огурец",
+                "кунжут черный",
+                "унаги соус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 26,
+                "calories_kcal": 208
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Черный дракон",
+            "pieces": 4,
+            "weight_g": 105,
+            "composition": [
+                "Сыр сливочный",
+                "огурец",
+                "черный кунжут",
+                "белый кунжут",
+                "речной угорь жареный",
+                "сырный соус",
+                "икра масаго оранжевая",
+                "унаги соус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 15,
+                "carbs_g": 23,
+                "calories_kcal": 255
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Монако",
+            "pieces": 4,
+            "weight_g": 93,
+            "composition": [
+                "Пекинская капуста",
+                "угорь жареный",
+                "белый кунжут",
+                "сырный соус",
+                "унаги соус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 9,
+                "carbs_g": 25,
+                "calories_kcal": 205
+            },
+            "price_rub": 239
+        },
+        {
+            "category": "Роллы",
+            "name": "Темпурный с лососем терияки",
+            "pieces": 4,
+            "weight_g": 123,
+            "composition": [
+                "Лосось терияки",
+                "лук зеленый",
+                "соус чесночный",
+                "кляр",
+                "сухари панко",
+                "помидор",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 13,
+                "carbs_g": 26,
+                "calories_kcal": 257
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Роллы",
+            "name": "Кимпаб с тунцом",
+            "pieces": 5,
+            "weight_g": 143,
+            "composition": [
+                "Сыр сливочный",
+                "морковь",
+                "соус кимчи",
+                "масло кунжутное",
+                "огурец",
+                "тунец",
+                "соус спайси"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 7,
+                "carbs_g": 21,
+                "calories_kcal": 187
+            },
+            "price_rub": 209
+        },
+        {
+            "category": "Роллы",
+            "name": "Кимпаб с креветками",
+            "pieces": 5,
+            "weight_g": 148,
+            "composition": [
+                "Сыр сливочный",
+                "креветки темпура",
+                "салат чука",
+                "огурец",
+                "соус спайси"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 8,
+                "carbs_g": 24,
+                "calories_kcal": 192
+            },
+            "price_rub": 219
+        },
+        {
+            "category": "Роллы",
+            "name": "Запеченный Сенсей",
+            "pieces": 4,
+            "weight_g": 98,
+            "composition": [
+                "Лосось филе",
+                "огурец",
+                "сыр сливочный",
+                "сырный соус",
+                "кунжут белый",
+                "кунжут черный",
+                "унаги соус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 13,
+                "carbs_g": 23,
+                "calories_kcal": 233
+            },
+            "price_rub": 289
+        },
+        {
+            "category": "Роллы",
+            "name": "Техасская резня",
+            "pieces": 4,
+            "weight_g": 110,
+            "composition": [
+                "Креветки",
+                "лосось филе",
+                "сыр сливочный",
+                "огурец",
+                "соус спайси",
+                "кунжут черный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 12,
+                "carbs_g": 21,
+                "calories_kcal": 230
+            },
+            "price_rub": 349
+        },
+        {
+            "category": "Роллы",
+            "name": "Унаги темпура",
+            "pieces": 4,
+            "weight_g": 113,
+            "composition": [
+                "Сыр сливочный",
+                "тунец",
+                "лук зеленый",
+                "кляр",
+                "сухари панировочные",
+                "соус сырный Heinz",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 6,
+                "carbs_g": 28,
+                "calories_kcal": 206
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Роллы",
+            "name": "Филадельфия лайт",
+            "pieces": 4,
+            "weight_g": 97,
+            "composition": [
+                "Лосось",
+                "огурец",
+                "сыр сливочный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 8,
+                "carbs_g": 22,
+                "calories_kcal": 184
+            },
+            "price_rub": 239
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Хоккайдо",
+            "pieces": 8,
+            "weight_g": 149,
+            "composition": [
+                "Лосось терияки",
+                "сыр сливочный",
+                "огурец",
+                "соус сырный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 13,
+                "fats_g": 12,
+                "carbs_g": 19,
+                "calories_kcal": 236
+            },
+            "price_rub": 369
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Таманеги",
+            "pieces": 4,
+            "weight_g": 82,
+            "composition": [
+                "Лосось филе",
+                "сыр сливочный",
+                "лук зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 7,
+                "carbs_g": 26,
+                "calories_kcal": 191
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Фокус",
+            "pieces": 4,
+            "weight_g": 105,
+            "composition": [
+                "Куриное филе жареное",
+                "помидор",
+                "сыр моцарелла",
+                "черный кунжут",
+                "сыр сливочный",
+                "соус унаги"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 11,
+                "carbs_g": 20,
+                "calories_kcal": 211
+            },
+            "price_rub": 199
+        },
+        {
+            "category": "Роллы",
+            "name": "Калифорния с крабом",
+            "pieces": 4,
+            "weight_g": 92,
+            "composition": [
+                "Крабовые палочки с майонезом",
+                "огурец",
+                "икра масаго оранжевая"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 4,
+                "carbs_g": 24,
+                "calories_kcal": 156
+            },
+            "price_rub": 169
+        },
+        {
+            "category": "Роллы",
+            "name": "Запеченный Майами",
+            "pieces": 4,
+            "weight_g": 99,
+            "composition": [
+                "Мидии",
+                "икра масаго оранжевая",
+                "соус сырный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 10,
+                "carbs_g": 23,
+                "calories_kcal": 210
+            },
+            "price_rub": 199
+        },
+        {
+            "category": "Роллы",
+            "name": "Запеченный Вулкан",
+            "pieces": 8,
+            "weight_g": 149,
+            "composition": [
+                "Сыр сливочный",
+                "огурец",
+                "угорь жареный",
+                "соус сырный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 12,
+                "carbs_g": 23,
+                "calories_kcal": 240
+            },
+            "price_rub": 529
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Капоэйра",
+            "pieces": 8,
+            "weight_g": 112,
+            "composition": [
+                "Свежий огурец",
+                "сыр сливочный",
+                "рис",
+                "нори"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 3,
+                "carbs_g": 26,
+                "calories_kcal": 147
+            },
+            "price_rub": 149
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл с тунцом",
+            "pieces": 8,
+            "weight_g": 102,
+            "composition": [
+                "Тунец",
+                "рис",
+                "нори"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 2,
+                "carbs_g": 27,
+                "calories_kcal": 158
+            },
+            "price_rub": 339
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл с угрём",
+            "pieces": 8,
+            "weight_g": 109,
+            "composition": [
+                "Классический ролл с угрем",
+                "унаги соус",
+                "кунжут белый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 7,
+                "carbs_g": 31,
+                "calories_kcal": 231
+            },
+            "price_rub": 339
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл Бонито",
+            "pieces": 4,
+            "weight_g": 89,
+            "composition": [
+                "Лосось филе",
+                "огурец",
+                "сыр сливочный",
+                "стружка тунца бонито"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 7,
+                "carbs_g": 23,
+                "calories_kcal": 183
+            },
+            "price_rub": 199
+        },
+        {
+            "category": "Роллы",
+            "name": "Запеченное горячее сердце самурая",
+            "pieces": 4,
+            "weight_g": 116,
+            "composition": [
+                "Лосось",
+                "филе минтая в панировке",
+                "сыр сливочный",
+                "соус сырный",
+                "соус унаги",
+                "белый кунжут",
+                "черный кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 13,
+                "carbs_g": 20,
+                "calories_kcal": 237
+            },
+            "price_rub": 239
+        },
+        {
+            "category": "Роллы",
+            "name": "Филадельфия",
+            "pieces": 4,
+            "weight_g": 112,
+            "composition": [
+                "Лосось",
+                "сыр сливочный",
+                "огурец"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 19,
+                "calories_kcal": 180
+            },
+            "price_rub": 319
+        },
+        {
+            "category": "Роллы",
+            "name": "Запеченная калифорния",
+            "pieces": 4,
+            "weight_g": 113,
+            "composition": [
+                "Лосось",
+                "икра масаго оранжевая",
+                "огурец",
+                "соус сырный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 7,
+                "carbs_g": 32,
+                "calories_kcal": 215
+            },
+            "price_rub": 279
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл с лососем",
+            "pieces": 8,
+            "weight_g": 102,
+            "composition": [
+                "Пунцовый лосось",
+                "белый рис",
+                "лист нори"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 2,
+                "carbs_g": 27,
+                "calories_kcal": 158
+            },
+            "price_rub": 319
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл с креветкой",
+            "pieces": 8,
+            "weight_g": 102,
+            "composition": [
+                "Креветка",
+                "рис",
+                "нори"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 0,
+                "carbs_g": 27,
+                "calories_kcal": 140
+            },
+            "price_rub": 309
+        },
+        {
+            "category": "Роллы",
+            "name": "Темпурный с креветками",
+            "pieces": 8,
+            "weight_g": 269,
+            "composition": [
+                "Креветки темпура",
+                "сыр сливочный",
+                "такуан",
+                "лук фри",
+                "кляр",
+                "сухари панко",
+                "соус сырный",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 13,
+                "carbs_g": 27,
+                "calories_kcal": 249
+            },
+            "price_rub": 449
+        },
+        {
+            "category": "Роллы",
+            "name": "Темпурная филaдельфия",
+            "pieces": 8,
+            "weight_g": 254,
+            "composition": [
+                "Рис",
+                "лосось",
+                "сыр сливочный",
+                "сухари панко",
+                "кляр",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 27,
+                "calories_kcal": 212
+            },
+            "price_rub": 519
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл с лососем терияки",
+            "pieces": 8,
+            "weight_g": 247,
+            "composition": [
+                "Лосось терияки",
+                "лук зеленый",
+                "соус чесночный",
+                "кляр",
+                "сухари панко",
+                "помидор",
+                "соус унаги",
+                "белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 13,
+                "carbs_g": 26,
+                "calories_kcal": 257
+            },
+            "price_rub": 429
+        },
+        {
+            "category": "Пицца",
+            "name": "Пицца Деревенская",
+            "pieces": 1,
+            "weight_g": 425,
+            "composition": [
+                "Грибы шампиньоны",
+                "картофель по-деревенски",
+                "соус сметанный с грибами",
+                "сливочная основа",
+                "сыр моцарелла",
+                "лук красный",
+                "укроп"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 13,
+                "carbs_g": 21,
+                "calories_kcal": 233
+            },
+            "price_rub": 445
+        },
+        {
+            "category": "Пицца",
+            "name": "Аргентинские креветки",
+            "pieces": 1,
+            "weight_g": 345,
+            "composition": [
+                "Креветки",
+                "помидоры",
+                "соус майонезный",
+                "сыр моцарелла",
+                "соус чимичурри"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 13,
+                "carbs_g": 24,
+                "calories_kcal": 247
+            },
+            "price_rub": 555
+        },
+        {
+            "category": "Пицца",
+            "name": "Гавайская с курицей",
+            "pieces": 1,
+            "weight_g": 380,
+            "composition": [
+                "Куриное филе жареное",
+                "ананасы консервированные",
+                "сыр моцарелла",
+                "соус гавайский"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 8,
+                "carbs_g": 24,
+                "calories_kcal": 216
+            },
+            "price_rub": 475
+        },
+        {
+            "category": "Пицца",
+            "name": "Четыре сезона",
+            "pieces": 1,
+            "weight_g": 415,
+            "composition": [
+                "Соус томатный",
+                "лук репчатый",
+                "масло подсолнечное",
+                "уксус столовый",
+                "соль",
+                "перец черный молотый",
+                "пепперони",
+                "ветчина",
+                "шампиньоны",
+                "помидорки",
+                "сливочный сыр",
+                "моцарелла"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 12,
+                "carbs_g": 20,
+                "calories_kcal": 232
+            },
+            "price_rub": 425
+        },
+        {
+            "category": "Пицца",
+            "name": "Пепперони",
+            "pieces": 1,
+            "weight_g": 330,
+            "composition": [
+                "Пепперони",
+                "сыр моцарелла",
+                "соус томатный",
+                "лук репчатый",
+                "масло подсолнечное",
+                "уксус столовый",
+                "соль",
+                "перец черный молотый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 11,
+                "carbs_g": 31,
+                "calories_kcal": 267
+            },
+            "price_rub": 400
+        },
+        {
+            "category": "Пицца",
+            "name": "Карбонара",
+            "pieces": 1,
+            "weight_g": 365,
+            "composition": [
+                "Сыр моцарелла",
+                "бекон варенокопченый",
+                "сливочная основа",
+                "лук красный",
+                "сыр пармезан"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 19,
+                "carbs_g": 22,
+                "calories_kcal": 307
+            },
+            "price_rub": 475
+        },
+        {
+            "category": "Пицца",
+            "name": "Чимичурри",
+            "pieces": 1,
+            "weight_g": 420,
+            "composition": [
+                "Бекон",
+                "охотничьи колбаски",
+                "ананас консервированный",
+                "соус барбекю",
+                "соус чимичурри",
+                "соус томатный",
+                "сыр моцарелла"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 15,
+                "carbs_g": 23,
+                "calories_kcal": 271
+            },
+            "price_rub": 575
+        },
+        {
+            "category": "Пицца",
+            "name": "Пицца Спецмикс",
+            "pieces": 1,
+            "weight_g": 395,
+            "composition": [
+                "Охотничьи колбаски",
+                "колбаса полукопченая",
+                "помидор",
+                "соус томатный",
+                "орегано сушеный",
+                "сыр моцарелла"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 14,
+                "fats_g": 19,
+                "carbs_g": 24,
+                "calories_kcal": 323
+            },
+            "price_rub": 425
+        },
+        {
+            "category": "Пицца",
+            "name": "Сальса",
+            "pieces": 1,
+            "weight_g": 450,
+            "composition": [
+                "Бекон",
+                "лук красный",
+                "халапеньо",
+                "помидоры",
+                "соус сальса",
+                "сыр моцарелла",
+                "соус чимичурри"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 14,
+                "carbs_g": 23,
+                "calories_kcal": 258
+            },
+            "price_rub": 545
+        },
+        {
+            "category": "Пицца",
+            "name": "Том-Ям",
+            "pieces": 1,
+            "weight_g": 355,
+            "composition": [
+                "Куриное филе жареное",
+                "грибы шампиньоны",
+                "соус том-ям",
+                "сыр моцарелла",
+                "лук зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 16,
+                "fats_g": 13,
+                "carbs_g": 22,
+                "calories_kcal": 269
+            },
+            "price_rub": 495
+        },
+        {
+            "category": "Пицца",
+            "name": "Домашняя",
+            "pieces": 1,
+            "weight_g": 430,
+            "composition": [
+                "Соус томатный Хайнц",
+                "Лук красный",
+                "Огурцы маринованные",
+                "Ветчина",
+                "Колбаса полукопченая",
+                "Помидор",
+                "Сыр моцарелла",
+                "Майонез",
+                "Укроп"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 16,
+                "carbs_g": 18,
+                "calories_kcal": 260
+            },
+            "price_rub": 465
+        },
+        {
+            "category": "Пицца",
+            "name": "Пицца Огненная",
+            "pieces": 1,
+            "weight_g": 400,
+            "composition": [
+                "Колбаса пепперони",
+                "Помидор",
+                "Огурцы маринованные",
+                "Соус томатный",
+                "Сыр моцарелла",
+                "Лук красный",
+                "Соус чили шрирача"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 11,
+                "carbs_g": 20,
+                "calories_kcal": 215
+            },
+            "price_rub": 445
+        },
+        {
+            "category": "Пицца",
+            "name": "Прованс",
+            "pieces": 1,
+            "weight_g": 395,
+            "composition": [
+                "Бекон",
+                "Помидор",
+                "Огурцы маринованные",
+                "Соус майонезный",
+                "Сыр моцарелла",
+                "Лук красный",
+                "Орегано сушеный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 15,
+                "carbs_g": 19,
+                "calories_kcal": 247
+            },
+            "price_rub": 445
+        },
+        {
+            "category": "Пицца",
+            "name": "Четыре мяса",
+            "pieces": 1,
+            "weight_g": 420,
+            "composition": [
+                "Колбаса пепперони",
+                "Куриное филе жареное",
+                "Колбаса полукопченая",
+                "Охотничьи колбаски",
+                "Соус майонезный",
+                "Сыр моцарелла",
+                "Огурцы маринованные",
+                "Соус сырный",
+                "Соус барбекю"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 13,
+                "fats_g": 22,
+                "carbs_g": 21,
+                "calories_kcal": 334
+            },
+            "price_rub": 505
+        },
+        {
+            "category": "Пицца",
+            "name": "Мясная",
+            "pieces": 1,
+            "weight_g": 385,
+            "composition": [
+                "Ветчина",
+                "Бекон варенокопченый",
+                "Колбаса полукопченая",
+                "Сыр моцарелла",
+                "Соус томатный",
+                "Лук репчатый",
+                "Масло подсолнечное",
+                "Уксус столовый",
+                "Соль",
+                "Перец черный молотый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 10,
+                "carbs_g": 30,
+                "calories_kcal": 254
+            },
+            "price_rub": 455
+        },
+        {
+            "category": "Пицца",
+            "name": "Чикен Чиз",
+            "pieces": 1,
+            "weight_g": 410,
+            "composition": [
+                "Куриное филе жареное",
+                "Помидор",
+                "Соус \"Heinz\" сырный",
+                "Сыр моцарелла",
+                "Соус томатный",
+                "Лук репчатый",
+                "Масло подсолнечное",
+                "Уксус столовый",
+                "Соль",
+                "Перец черный молотый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 10,
+                "carbs_g": 20,
+                "calories_kcal": 214
+            },
+            "price_rub": 465
+        },
+        {
+            "category": "Пицца",
+            "name": "Пицца Маргарита",
+            "pieces": 1,
+            "weight_g": 385,
+            "composition": [
+                "Помидор",
+                "Орегано сушеный",
+                "Сыр моцарелла",
+                "Соус томатный",
+                "Лук репчатый",
+                "Масло подсолнечное",
+                "Уксус столовый",
+                "Соль",
+                "Перец черный молотый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 9,
+                "carbs_g": 21,
+                "calories_kcal": 201
+            },
+            "price_rub": 365
+        },
+        {
+            "category": "Пицца",
+            "name": "Ветчина и грибы",
+            "pieces": 1,
+            "weight_g": 340,
+            "composition": [
+                "Ветчина",
+                "Грибы шампиньоны",
+                "Сыр моцарелла",
+                "Соус сметанный с грибами"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 12,
+                "carbs_g": 21,
+                "calories_kcal": 240
+            },
+            "price_rub": 425
+        },
+        {
+            "category": "Пицца",
+            "name": "Три сыра",
+            "pieces": 1,
+            "weight_g": 355,
+            "composition": [
+                "Сыр мраморный",
+                "Сыр гауда",
+                "Сыр моцарелла",
+                "Сливочная основа"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 24,
+                "carbs_g": 21,
+                "calories_kcal": 340
+            },
+            "price_rub": 425
+        },
+        {
+            "category": "Комбо",
+            "name": "Комбо Имба",
+            "pieces": 1,
+            "weight_g": 1120,
+            "composition": [
+                "Пицца Спецмикс 1/2",
+                "Пицца Три сыра 1/2",
+                "Суши буррито с лососем терияки",
+                "Суши буррито с курицей",
+                "Кола 1 л"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 6,
+                "carbs_g": 21,
+                "calories_kcal": 161
+            },
+            "price_rub": 1459
+        },
+        {
+            "category": "Комбо",
+            "name": "Минимал",
+            "pieces": 1,
+            "weight_g": 375,
+            "composition": [
+                "Пицца с ветчиной 15см",
+                "Куриные наггетсы 6 шт",
+                "Добрый Кола 1 л",
+                "Картофель по-деревенски",
+                "Соус Heinz сырный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 4,
+                "carbs_g": 14,
+                "calories_kcal": 104
+            },
+            "price_rub": 779
+        },
+        {
+            "category": "Комбо",
+            "name": "Фантастическая четверка",
+            "pieces": 1,
+            "weight_g": 1465,
+            "composition": [
+                "Спецмикс 25 см",
+                "Маргарита 25 см",
+                "Ветчина и грибы 25 см",
+                "Три сыра 25 см"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 13,
+                "fats_g": 16,
+                "carbs_g": 24,
+                "calories_kcal": 292
+            },
+            "price_rub": 1640
+        },
+        {
+            "category": "Комбо",
+            "name": "Комбо Третий не лишний",
+            "pieces": 1,
+            "weight_g": 1100,
+            "composition": [
+                "Пицца Домашняя 25 см",
+                "Пицца Три сыра 25 см",
+                "Пицца Пепперони 25 см"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 13,
+                "fats_g": 18,
+                "carbs_g": 23,
+                "calories_kcal": 306
+            },
+            "price_rub": 1055
+        },
+        {
+            "category": "Комбо",
+            "name": "Комбо 5 пицц",
+            "pieces": 1,
+            "weight_g": 1930,
+            "composition": [
+                "Барбекю по-болгарски 25 см",
+                "Деревенская 25 см",
+                "Четыре сезона 25 см",
+                "Гавайская с курицей 25 см",
+                "Пепперони 25 см"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 11,
+                "fats_g": 15,
+                "carbs_g": 23,
+                "calories_kcal": 271
+            },
+            "price_rub": 1885
+        },
+        {
+            "category": "Комбо",
+            "name": "Комбо 8 пицц",
+            "pieces": 1,
+            "weight_g": 2970,
+            "composition": [
+                "Сливочный цыпленок 25 см",
+                "Маргарита 25 см",
+                "Ветчина и грибы 25 см",
+                "Барбекю по-болгарски 25 см",
+                "Домашняя 25 см",
+                "Четыре сыра 25 см",
+                "Гавайская с курицей 25 см",
+                "Пепперони 25 см"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 15,
+                "carbs_g": 23,
+                "calories_kcal": 275
+            },
+            "price_rub": 3065
+        },
+        {
+            "category": "Комбо",
+            "name": "Комбо Царь горы",
+            "pieces": 1,
+            "weight_g": 200,
+            "composition": [
+                "Картофель фри",
+                "Куриные наггетсы 6 шт"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 12,
+                "carbs_g": 27,
+                "calories_kcal": 248
+            },
+            "price_rub": 259
+        },
+        {
+            "category": "Комбо",
+            "name": "Farfor(детский) Kids с Пиццей",
+            "pieces": 1,
+            "weight_g": 250,
+            "composition": [
+                "Пицца с ветчиной 15 см",
+                "Куриные наггетсы 6 шт",
+                "Соус Сырный Хайнц",
+                "Сок 200 мл"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 14,
+                "fats_g": 14,
+                "carbs_g": 20,
+                "calories_kcal": 262
+            },
+            "price_rub": 459
+        },
+        {
+            "category": "Комбо",
+            "name": "Farfor(детский) Kids",
+            "pieces": 1,
+            "weight_g": 279,
+            "composition": [
+                "Ролл с огурцом",
+                "Картофель фри",
+                "Куриный попкорн",
+                "Соус сырный Хайнц",
+                "Сок 200 мл"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 7,
+                "carbs_g": 26,
+                "calories_kcal": 207
+            },
+            "price_rub": 459
+        },
+        {
+            "category": "Комбо",
+            "name": "Farfor(детский) Kids с чизбургером",
+            "pieces": 1,
+            "weight_g": 349,
+            "composition": [
+                "Ролл с огурцом",
+                "Картофель фри",
+                "Чизбургер",
+                "Соус сырный Хайнц",
+                "Сок 200 мл"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 10,
+                "carbs_g": 30,
+                "calories_kcal": 246
+            },
+            "price_rub": 489
+        },
+        {
+            "category": "Детское меню",
+            "name": "Картофель фри",
+            "pieces": 1,
+            "weight_g": 110,
+            "composition": [
+                "картофель фри"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 12,
+                "carbs_g": 37,
+                "calories_kcal": 272
+            },
+            "price_rub": 200
+        },
+        {
+            "category": "Пицца",
+            "name": "Маргарита",
+            "pieces": 1,
+            "weight_g": 385,
+            "composition": [
+                "Помидор",
+                "Орегано сушеный",
+                "Сыр моцарелла",
+                "Соус томатный (соус томатный, лук репчатый, масло подсолнечное, уксус столовый, соль, перец черный молотый)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 11,
+                "carbs_g": 24,
+                "calories_kcal": 235
+            },
+            "price_rub": 365
+        },
+        {
+            "category": "Роллы",
+            "name": "Капоэйра: 8 шт.",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Классический ролл с огурцом и сыром сливочным"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 3,
+                "carbs_g": 26,
+                "calories_kcal": 147
+            },
+            "price_rub": 149
+        },
+        {
+            "category": "Роллы",
+            "name": "Ролл с огурцом: 8 шт.",
+            "pieces": 1,
+            "weight_g": 114,
+            "composition": [
+                "Классический ролл с огурцом и белым кунжутом жареным"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 1,
+                "carbs_g": 27,
+                "calories_kcal": 129
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Роллы",
+            "name": "Роллфер с курицей",
+            "pieces": 1,
+            "weight_g": 230,
+            "composition": [
+                "Тортилья",
+                "Куриное филе",
+                "Помидор",
+                "Соус майонезный",
+                "Мраморный сыр"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 17,
+                "fats_g": 16,
+                "carbs_g": 17,
+                "calories_kcal": 280
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Роллы",
+            "name": "Куриный попкорн",
+            "pieces": 1,
+            "weight_g": 180,
+            "composition": [
+                "Куриное филе в кляре, обжаренное во фритюре"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 16,
+                "fats_g": 2,
+                "carbs_g": 15,
+                "calories_kcal": 142
+            },
+            "price_rub": 349
+        },
+        {
+            "category": "Напитки",
+            "name": "Сок детский",
+            "pieces": 1,
+            "weight_g": 200,
+            "composition": [
+                "Детский сок 200 мл"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 11,
+                "calories_kcal": 46
+            },
+            "price_rub": 79
+        },
+        {
+            "category": "Бургеры",
+            "name": "Чикен пита",
+            "pieces": 1,
+            "weight_g": 255,
+            "composition": [
+                "Пита",
+                "Лук фри",
+                "Помидор свежий",
+                "Салат айсберг",
+                "Соус свит чили",
+                "Куриная котлета в панировке"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 5,
+                "carbs_g": 26,
+                "calories_kcal": 181
+            },
+            "price_rub": 229
+        },
+        {
+            "category": "Бургеры",
+            "name": "Биф пита",
+            "pieces": 1,
+            "weight_g": 235,
+            "composition": [
+                "Пита",
+                "Лук фри",
+                "Сыр чеддер",
+                "Помидор свежий",
+                "Салат айсберг",
+                "Соус майонезный",
+                "Котлета говяжья"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 3,
+                "carbs_g": 22,
+                "calories_kcal": 155
+            },
+            "price_rub": 379
+        },
+        {
+            "category": "Бургеры",
+            "name": "Чикенбургер оригинальный",
+            "pieces": 1,
+            "weight_g": 240,
+            "composition": [
+                "Булка белая",
+                "Салат айсберг",
+                "Соус тар-тар",
+                "Огурчик маринованный",
+                "Томатный соус Heinz",
+                "Лук фри",
+                "Куриная котлета в панировке"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 4,
+                "carbs_g": 23,
+                "calories_kcal": 168
+            },
+            "price_rub": 289
+        },
+        {
+            "category": "Бургеры",
+            "name": "Чикенбургер острый",
+            "pieces": 1,
+            "weight_g": 240,
+            "composition": [
+                "Булка белая",
+                "Салат айсберг",
+                "Соус тар-тар",
+                "Огурчик свежий",
+                "Соус острый",
+                "Лук фри",
+                "Куриная котлета в панировке"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 7,
+                "carbs_g": 22,
+                "calories_kcal": 191
+            },
+            "price_rub": 289
+        },
+        {
+            "category": "Бургеры",
+            "name": "Между булками",
+            "pieces": 1,
+            "weight_g": 285,
+            "composition": [
+                "Белая булка",
+                "Салат айсберг",
+                "Томатный соус Heinz",
+                "Томаты",
+                "Котлета из говядины",
+                "Сыр чеддер",
+                "Огурчик",
+                "Лук фри",
+                "Соус барбекю"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 4,
+                "carbs_g": 15,
+                "calories_kcal": 136
+            },
+            "price_rub": 449
+        },
+        {
+            "category": "Бургеры",
+            "name": "Няняйка завернула",
+            "pieces": 1,
+            "weight_g": 315,
+            "composition": [
+                "Белая булка",
+                "Салат айсберг",
+                "Томаты",
+                "Котлета из говядины",
+                "Сыр чеддер",
+                "Бекон жареный",
+                "Лук фри",
+                "Соус смородиновый",
+                "Огурчик"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 11,
+                "carbs_g": 14,
+                "calories_kcal": 195
+            },
+            "price_rub": 449
+        },
+        {
+            "category": "Бургеры",
+            "name": "Зоин размерчик",
+            "pieces": 1,
+            "weight_g": 310,
+            "composition": [
+                "Белая булка",
+                "Салат айсберг",
+                "Томаты",
+                "Котлета из говядины",
+                "Сыр сливочный",
+                "Огурчик маринованный",
+                "Жареные грибы с луком",
+                "Соус тар-тар"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 9,
+                "carbs_g": 12,
+                "calories_kcal": 165
+            },
+            "price_rub": 449
+        },
+        {
+            "category": "Бургеры",
+            "name": "Счастье Натаныча",
+            "pieces": 1,
+            "weight_g": 305,
+            "composition": [
+                "Белая булка",
+                "Салат айсберг",
+                "Томаты",
+                "Котлета из говядины",
+                "Сыр чеддер",
+                "Бекон жареный",
+                "Соус Шрирача",
+                "Лук красный",
+                "Острый майонез"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 12,
+                "carbs_g": 13,
+                "calories_kcal": 200
+            },
+            "price_rub": 449
+        },
+        {
+            "category": "Закуски",
+            "name": "Роллфер с ветчиной",
+            "pieces": 1,
+            "weight_g": 220,
+            "composition": [
+                "Тортилья",
+                "Ветчина",
+                "Сыр гауда",
+                "Майонезный соус",
+                "Помидор"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 20,
+                "carbs_g": 17,
+                "calories_kcal": 296
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Закуски",
+            "name": "Онигири с лососем",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Лосось",
+                "Рис",
+                "Нори",
+                "Соус сырный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 12,
+                "carbs_g": 24,
+                "calories_kcal": 232
+            },
+            "price_rub": 240
+        },
+        {
+            "category": "Закуски",
+            "name": "Онигири с креветкой",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Креветки вареные",
+                "Рис",
+                "Нори",
+                "Соус сырный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 11,
+                "carbs_g": 24,
+                "calories_kcal": 223
+            },
+            "price_rub": 240
+        },
+        {
+            "category": "Закуски",
+            "name": "Онигири с курицей",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Куриное филе жареное",
+                "Рис",
+                "Нори",
+                "Соус сырный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 12,
+                "carbs_g": 24,
+                "calories_kcal": 244
+            },
+            "price_rub": 210
+        },
+        {
+            "category": "Закуски",
+            "name": "Онигири с курицей и свит чили",
+            "pieces": 1,
+            "weight_g": 117,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус свит чили",
+                "Куриное филе жареное"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 1,
+                "carbs_g": 32,
+                "calories_kcal": 172
+            },
+            "price_rub": 200
+        },
+        {
+            "category": "Закуски",
+            "name": "Онигири Филадельфия",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Сыр сливочный",
+                "Лосось филе",
+                "Огурец"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 6,
+                "carbs_g": 24,
+                "calories_kcal": 185
+            },
+            "price_rub": 310
+        },
+        {
+            "category": "Закуски",
+            "name": "Онигири с креветкой и том-ям",
+            "pieces": 1,
+            "weight_g": 117,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус том-ям",
+                "Креветки вареные"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 7,
+                "carbs_g": 26,
+                "calories_kcal": 200
+            },
+            "price_rub": 230
+        },
+        {
+            "category": "Закуски",
+            "name": "Картофель фри с беконом и луком фри",
+            "pieces": 1,
+            "weight_g": 170,
+            "composition": [
+                "Картофель фри",
+                "Бекон жареный",
+                "Сырный соус Heinz",
+                "Томатный соус Heinz",
+                "Соль"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 16,
+                "carbs_g": 32,
+                "calories_kcal": 292
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Закуски",
+            "name": "Картофель по-деревенски с беконом и луком фри",
+            "pieces": 1,
+            "weight_g": 190,
+            "composition": [
+                "Картофель",
+                "Бекон жареный",
+                "Сырный соус Heinz",
+                "Томатный соус Heinz",
+                "Соль"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 9,
+                "carbs_g": 22,
+                "calories_kcal": 181
+            },
+            "price_rub": 299
+        },
+        {
+            "category": "Закуски",
+            "name": "Арахис соленый",
+            "pieces": 1,
+            "weight_g": 50,
+            "composition": [
+                "Арахис",
+                "Соль"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 28,
+                "fats_g": 52,
+                "carbs_g": 6,
+                "calories_kcal": 599
+            },
+            "price_rub": 99
+        },
+        {
+            "category": "Закуски",
+            "name": "Фисташки соленые",
+            "pieces": 1,
+            "weight_g": 50,
+            "composition": [
+                "Фисташки",
+                "Соль"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 20,
+                "fats_g": 50,
+                "carbs_g": 7,
+                "calories_kcal": 560
+            },
+            "price_rub": 199
+        },
+        {
+            "category": "Закуски",
+            "name": "Сырные палочки",
+            "pieces": 1,
+            "weight_g": 60,
+            "composition": [
+                "Сыр моцарелла",
+                "Кляр",
+                "Сухари панировочные"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 17,
+                "fats_g": 11,
+                "carbs_g": 23,
+                "calories_kcal": 259
+            },
+            "price_rub": 179
+        },
+        {
+            "category": "Закуски",
+            "name": "Луковые кольца",
+            "pieces": 1,
+            "weight_g": 35,
+            "composition": [
+                "Лук",
+                "Панировочные сухари",
+                "Масло подсолнечное",
+                "Крахмал пшеничный",
+                "Мука пшеничная",
+                "Соль",
+                "Сахар"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 8,
+                "carbs_g": 30,
+                "calories_kcal": 204
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Закуски",
+            "name": "Картофель по-деревенски",
+            "pieces": 1,
+            "weight_g": 150,
+            "composition": [
+                "Картофель",
+                "Соль"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 2,
+                "fats_g": 8,
+                "carbs_g": 24,
+                "calories_kcal": 176
+            },
+            "price_rub": 219
+        },
+        {
+            "category": "Закуски",
+            "name": "Куриные наггетсы",
+            "pieces": 1,
+            "weight_g": 90,
+            "composition": [
+                "Куриные наггетсы",
+                "Обжаренные во фритюре"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 13,
+                "fats_g": 13,
+                "carbs_g": 18,
+                "calories_kcal": 241
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Закуски",
+            "name": "Чесночные гренки",
+            "pieces": 1,
+            "weight_g": 160,
+            "composition": [
+                "Гренки из ржаного хлеба",
+                "Фирменный майонезный соус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 15,
+                "carbs_g": 39,
+                "calories_kcal": 319
+            },
+            "price_rub": 170
+        },
+        {
+            "category": "Закуски",
+            "name": "Крылья оригинальные (3 шт)",
+            "pieces": 1,
+            "weight_g": 120,
+            "composition": [
+                "Оригинальные хрустящие куриные крылья"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 6,
+                "carbs_g": 10,
+                "calories_kcal": 142
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Закуски",
+            "name": "Крылья острые (3 шт)",
+            "pieces": 1,
+            "weight_g": 120,
+            "composition": [
+                "Острые хрустящие куриные крылья"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 6,
+                "carbs_g": 10,
+                "calories_kcal": 142
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Закуски",
+            "name": "Они с лососем",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Рис",
+                "Лосось филе",
+                "Сырный соус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 12,
+                "carbs_g": 24,
+                "calories_kcal": 232
+            },
+            "price_rub": 230
+        },
+        {
+            "category": "Закуски",
+            "name": "Они чикен",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Куриное филе жареное",
+                "Рис",
+                "Нори",
+                "Соус сырный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 12,
+                "carbs_g": 24,
+                "calories_kcal": 244
+            },
+            "price_rub": 200
+        },
+        {
+            "category": "Закуски",
+            "name": "Они чикен барбекю",
+            "pieces": 1,
+            "weight_g": 187,
+            "composition": [
+                "Куриное филе жареное",
+                "Рис",
+                "Нори",
+                "Соус сырный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 1,
+                "carbs_g": 30,
+                "calories_kcal": 161
+            },
+            "price_rub": 210
+        },
+        {
+            "category": "Закуски",
+            "name": "Они чикен том-ям",
+            "pieces": 1,
+            "weight_g": 117,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус том-ям",
+                "Куриное филе жареное"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 27,
+                "calories_kcal": 212
+            },
+            "price_rub": 200
+        },
+        {
+            "category": "Закуски",
+            "name": "Они свит чикен",
+            "pieces": 1,
+            "weight_g": 117,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус свит чили",
+                "Куриное филе жареное"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 1,
+                "carbs_g": 32,
+                "calories_kcal": 169
+            },
+            "price_rub": 190
+        },
+        {
+            "category": "Закуски",
+            "name": "Они свит чикен: темпура",
+            "pieces": 1,
+            "weight_g": 162,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Куриное филе жареное",
+                "Соус свит чили",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 1,
+                "carbs_g": 35,
+                "calories_kcal": 187
+            },
+            "price_rub": 210
+        },
+        {
+            "category": "Закуски",
+            "name": "Они гамадари",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Салат чука",
+                "Соус гамадари"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 5,
+                "carbs_g": 27,
+                "calories_kcal": 165
+            },
+            "price_rub": 190
+        },
+        {
+            "category": "Закуски",
+            "name": "Они гамадари: темпура",
+            "pieces": 1,
+            "weight_g": 167,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Салат чука",
+                "Соус гамадари",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 3,
+                "carbs_g": 32,
+                "calories_kcal": 185
+            },
+            "price_rub": 210
+        },
+        {
+            "category": "Закуски",
+            "name": "Они фила",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Рис",
+                "Сыр сливочный",
+                "Лосось филе",
+                "Огурец"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 7,
+                "carbs_g": 25,
+                "calories_kcal": 187
+            },
+            "price_rub": 290
+        },
+        {
+            "category": "Закуски",
+            "name": "Они Фила: темпура",
+            "pieces": 1,
+            "weight_g": 162,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Лосось филе",
+                "Сыр сливочный",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 5,
+                "carbs_g": 31,
+                "calories_kcal": 200
+            },
+            "price_rub": 310
+        },
+        {
+            "category": "Закуски",
+            "name": "Они гриль",
+            "pieces": 1,
+            "weight_g": 162,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Бекон жареный",
+                "Соус гриль"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 6,
+                "carbs_g": 31,
+                "calories_kcal": 207
+            },
+            "price_rub": 220
+        },
+        {
+            "category": "Закуски",
+            "name": "Они гриль: темпура",
+            "pieces": 1,
+            "weight_g": 162,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Бекон жареный",
+                "Соус гриль",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 6,
+                "carbs_g": 31,
+                "calories_kcal": 207
+            },
+            "price_rub": 230
+        },
+        {
+            "category": "Закуски",
+            "name": "Они спайси чикен",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Куриное филе жареное",
+                "Рис",
+                "Нори",
+                "Соус спайси"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 11,
+                "carbs_g": 25,
+                "calories_kcal": 239
+            },
+            "price_rub": 200
+        },
+        {
+            "category": "Закуски",
+            "name": "Они спайси эби",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Креветки вареные",
+                "Рис",
+                "Нори",
+                "Соус спайси"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 10,
+                "carbs_g": 24,
+                "calories_kcal": 214
+            },
+            "price_rub": 230
+        },
+        {
+            "category": "Закуски",
+            "name": "Они спайси краб",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Спайси",
+                "Краб с майонезом"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 12,
+                "carbs_g": 26,
+                "calories_kcal": 228
+            },
+            "price_rub": 180
+        },
+        {
+            "category": "Закуски",
+            "name": "Они спайси краб: темпура",
+            "pieces": 1,
+            "weight_g": 162,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Краб с майонезом",
+                "Соус спайси",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 8,
+                "carbs_g": 32,
+                "calories_kcal": 225
+            },
+            "price_rub": 200
+        },
+        {
+            "category": "Закуски",
+            "name": "Они спайси магура: темпура",
+            "pieces": 1,
+            "weight_g": 165,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус спайси",
+                "Тунец",
+                "Лук зеленый",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 7,
+                "carbs_g": 31,
+                "calories_kcal": 227
+            },
+            "price_rub": 210
+        },
+        {
+            "category": "Закуски",
+            "name": "Они спайси с лососем",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Лосось",
+                "Рис",
+                "Нори",
+                "Соус спайси"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 11,
+                "carbs_g": 24,
+                "calories_kcal": 219
+            },
+            "price_rub": 230
+        },
+        {
+            "category": "Закуски",
+            "name": "Они спайси тунец",
+            "pieces": 1,
+            "weight_g": 120,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус спайси",
+                "Тунец",
+                "Лук зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 6,
+                "carbs_g": 16,
+                "calories_kcal": 146
+            },
+            "price_rub": 190
+        },
+        {
+            "category": "Закуски",
+            "name": "Они спайси тунец: темпура",
+            "pieces": 1,
+            "weight_g": 120,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус спайси",
+                "Тунец",
+                "Лук зеленый",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 6,
+                "carbs_g": 16,
+                "calories_kcal": 146
+            },
+            "price_rub": 220
+        },
+        {
+            "category": "Закуски",
+            "name": "Они эби том-ям",
+            "pieces": 1,
+            "weight_g": 117,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус том-ям",
+                "Креветки вареные"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 8,
+                "carbs_g": 26,
+                "calories_kcal": 200
+            },
+            "price_rub": 220
+        },
+        {
+            "category": "Закуски",
+            "name": "Они эби том-ям: темпура",
+            "pieces": 1,
+            "weight_g": 117,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Соус том-ям",
+                "Креветка вареная",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 8,
+                "carbs_g": 26,
+                "calories_kcal": 200
+            },
+            "price_rub": 240
+        },
+        {
+            "category": "Закуски",
+            "name": "Они чука чиз",
+            "pieces": 1,
+            "weight_g": 107,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Салат чука",
+                "Сыр сливочный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 5,
+                "carbs_g": 28,
+                "calories_kcal": 173
+            },
+            "price_rub": 180
+        },
+        {
+            "category": "Закуски",
+            "name": "Они чука чиз: темпура",
+            "pieces": 1,
+            "weight_g": 107,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Салат чука",
+                "Сыр сливочный",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 5,
+                "carbs_g": 28,
+                "calories_kcal": 173
+            },
+            "price_rub": 200
+        },
+        {
+            "category": "Закуски",
+            "name": "Они цезарь",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Куриное филе жареное",
+                "Соус цезарь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 11,
+                "carbs_g": 25,
+                "calories_kcal": 231
+            },
+            "price_rub": 190
+        },
+        {
+            "category": "Закуски",
+            "name": "Они цезарь: темпура",
+            "pieces": 1,
+            "weight_g": 162,
+            "composition": [
+                "Рис",
+                "Нори",
+                "Куриное филе жареное",
+                "Соус цезарь",
+                "Кляр",
+                "Сухари панко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 7,
+                "carbs_g": 31,
+                "calories_kcal": 230
+            },
+            "price_rub": 200
+        },
+        {
+            "category": "Закуски",
+            "name": "Они эби",
+            "pieces": 1,
+            "weight_g": 122,
+            "composition": [
+                "Рис",
+                "Креветки вареные",
+                "Сырный соус",
+                "Нори"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 11,
+                "carbs_g": 24,
+                "calories_kcal": 223
+            },
+            "price_rub": 230
+        },
+        {
+            "category": "Закуски",
+            "name": "Гедза с креветкой",
+            "pieces": 1,
+            "weight_g": 100,
+            "composition": [
+                "Тесто",
+                "Фарш (креветка",
+                "Капуста белокачанная",
+                "Лук зеленый",
+                "Масло кунжутное",
+                "Майонез",
+                "Соевый соус",
+                "Чеснок",
+                "Сахар",
+                "Соль",
+                "Перец белый молотый)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 4,
+                "carbs_g": 22,
+                "calories_kcal": 170
+            },
+            "price_rub": 399
+        },
+        {
+            "category": "Закуски",
+            "name": "Гедза со свининой",
+            "pieces": 1,
+            "weight_g": 100,
+            "composition": [
+                "Тесто",
+                "Фарш (свинина",
+                "Капуста белокачанная",
+                "Лук зеленый",
+                "Масло кунжутное",
+                "Майонез",
+                "Соевый соус",
+                "Чеснок",
+                "Сахар",
+                "Соль",
+                "Перец белый молотый)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 8,
+                "carbs_g": 19,
+                "calories_kcal": 186
+            },
+            "price_rub": 329
+        },
+        {
+            "category": "Закуски",
+            "name": "Гедза с курицей",
+            "pieces": 1,
+            "weight_g": 97,
+            "composition": [
+                "Тесто",
+                "Фарш (куриное филе",
+                "Капуста белокачанная",
+                "Лук зеленый",
+                "Масло кунжутное",
+                "Майонез",
+                "Соевый соус",
+                "Чеснок",
+                "Сахар",
+                "Соль",
+                "Перец белый молотый)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 8,
+                "carbs_g": 19,
+                "calories_kcal": 186
+            },
+            "price_rub": 299
+        },
+        {
+            "category": "Закуски",
+            "name": "Гедза с говядиной",
+            "pieces": 1,
+            "weight_g": 105,
+            "composition": [
+                "Тесто",
+                "Фарш (говядина",
+                "Капуста белокачанная",
+                "Лук зеленый",
+                "Масло кунжутное",
+                "Майонез",
+                "Соевый соус",
+                "Чеснок",
+                "Сахар",
+                "Соль",
+                "Перец белый молотый)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 5,
+                "carbs_g": 22,
+                "calories_kcal": 163
+            },
+            "price_rub": 369
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Бомбяо с лососем терияки",
+            "pieces": 1,
+            "weight_g": 160,
+            "composition": [
+                "Лосось терияки",
+                "Рис",
+                "Соус сырный",
+                "Соус унаги",
+                "Белый кунжут",
+                "Лук зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 17,
+                "fats_g": 12,
+                "carbs_g": 20,
+                "calories_kcal": 300
+            },
+            "price_rub": 390
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Бомбяо с креветкой",
+            "pieces": 1,
+            "weight_g": 160,
+            "composition": [
+                "Креветки вареные",
+                "Рис",
+                "Соус сырный",
+                "Соус унаги",
+                "Белый кунжут",
+                "Лук зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 7,
+                "carbs_g": 19,
+                "calories_kcal": 210
+            },
+            "price_rub": 390
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Бомбяо с курицей",
+            "pieces": 1,
+            "weight_g": 160,
+            "composition": [
+                "Куриное филе жареное",
+                "Рис",
+                "Соус сырный",
+                "Соус унаги",
+                "Белый кунжут",
+                "Лук зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 8,
+                "carbs_g": 20,
+                "calories_kcal": 240
+            },
+            "price_rub": 330
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Бомбяо с угрем",
+            "pieces": 1,
+            "weight_g": 160,
+            "composition": [
+                "Угорь жареный",
+                "Рис",
+                "Соус сырный",
+                "Соус унаги",
+                "Белый кунжут",
+                "Лук зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 10,
+                "carbs_g": 27,
+                "calories_kcal": 250
+            },
+            "price_rub": 500
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Поке с лососем",
+            "pieces": 1,
+            "weight_g": 263,
+            "composition": [
+                "Лосось",
+                "Рис",
+                "Салат айсберг",
+                "Огурец",
+                "Помидоры черри",
+                "Такуан",
+                "Сыр сливочный",
+                "Водоросли маринованные чукка",
+                "Соус соевый",
+                "Соус гамадари",
+                "Белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 5,
+                "carbs_g": 18,
+                "calories_kcal": 137
+            },
+            "price_rub": 529
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Поке с креветками",
+            "pieces": 1,
+            "weight_g": 283,
+            "composition": [
+                "Креветки вареные",
+                "Рис",
+                "Салат айсберг",
+                "Огурец",
+                "Помидоры черри",
+                "Такуан",
+                "Сыр сливочный",
+                "Водоросли маринованные чукка",
+                "Соус соевый",
+                "Соус гамадари",
+                "Белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 4,
+                "carbs_g": 17,
+                "calories_kcal": 128
+            },
+            "price_rub": 529
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Поке с курицей",
+            "pieces": 1,
+            "weight_g": 303,
+            "composition": [
+                "Куриное филе в кляре",
+                "Рис",
+                "Салат айсберг",
+                "Огурец",
+                "Помидоры черри",
+                "Такуан",
+                "Сыр сливочный",
+                "Водоросли маринованные чукка",
+                "Соус терияки",
+                "Соус гамадари",
+                "Белый кунжут"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 4,
+                "carbs_g": 19,
+                "calories_kcal": 136
+            },
+            "price_rub": 379
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Салат Цезарь с креветками",
+            "pieces": 1,
+            "weight_g": 200,
+            "composition": [
+                "Салат айсберг",
+                "Помидоры черри",
+                "Креветки темпура",
+                "Сыр пармезан",
+                "Чесночные сухари",
+                "Соус цезарь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 13,
+                "carbs_g": 6,
+                "calories_kcal": 177
+            },
+            "price_rub": 480
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Салат Цезарь с курицей",
+            "pieces": 1,
+            "weight_g": 220,
+            "composition": [
+                "Салат Айсберг",
+                "Помидоры черри",
+                "Куриные кусочки в панировке обжаренные во фритюре",
+                "Сыр пармезан",
+                "Чесночные сухари",
+                "Соус цезарь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 11,
+                "calories_kcal": 148
+            },
+            "price_rub": 350
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Паста с курицей и грибами",
+            "pieces": 1,
+            "weight_g": 265,
+            "composition": [
+                "Грибы шампиньоны",
+                "Куриное филе",
+                "Сливки",
+                "Паста фетучини",
+                "Сыр пармезан",
+                "Грибной концентрат",
+                "Масло растительное"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 8,
+                "carbs_g": 31,
+                "calories_kcal": 244
+            },
+            "price_rub": 430
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Паста карбонара: new",
+            "pieces": 1,
+            "weight_g": 230,
+            "composition": [
+                "Бекон",
+                "Сливки",
+                "Сыр пармезан",
+                "Паста фетучини",
+                "Сухой бекон",
+                "Масло растительное"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 13,
+                "carbs_g": 39,
+                "calories_kcal": 305
+            },
+            "price_rub": 430
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Гречка с азу",
+            "pieces": 1,
+            "weight_g": 230,
+            "composition": [
+                "Крупа гречневая",
+                "Масло растительное",
+                "Соль",
+                "Говядина",
+                "Морковь",
+                "Лук репчатый",
+                "Огурцы консервированные",
+                "Перец черный молотый",
+                "Укроп",
+                "Петрушка"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 12,
+                "fats_g": 7,
+                "carbs_g": 35,
+                "calories_kcal": 251
+            },
+            "price_rub": 345
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Болоньезе со спагетти",
+            "pieces": 1,
+            "weight_g": 230,
+            "composition": [
+                "Фарш говяжий",
+                "Масло растительное",
+                "Морковь",
+                "Сливки",
+                "Томатная паста",
+                "Лук репчатый",
+                "Базилик сушеный",
+                "Перец черный молотый",
+                "Соль",
+                "Укроп",
+                "Петрушка",
+                "Спагетти"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 13,
+                "carbs_g": 2,
+                "calories_kcal": 137
+            },
+            "price_rub": 345
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Курица запеченая под сыром с рисом",
+            "pieces": 1,
+            "weight_g": 230,
+            "composition": [
+                "Филе куриное",
+                "Майонез",
+                "Моцарелла",
+                "Помидор",
+                "Перец черный молотый",
+                "Соль",
+                "Укроп",
+                "Петрушка",
+                "Масло растительное",
+                "Рис"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 6,
+                "carbs_g": 43,
+                "calories_kcal": 266
+            },
+            "price_rub": 235
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Паста с ветчиной и грибами",
+            "pieces": 1,
+            "weight_g": 230,
+            "composition": [
+                "Макароны",
+                "Масло растительное",
+                "Ветчина",
+                "Лук репчатый",
+                "Сливки 23%",
+                "Грибы шампиньоны",
+                "Молоко",
+                "Перец черный молотый",
+                "Соль"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 9,
+                "carbs_g": 1,
+                "calories_kcal": 101
+            },
+            "price_rub": 235
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Соба с курицей в соусе Гамадари",
+            "pieces": 1,
+            "weight_g": 340,
+            "composition": [
+                "Лапша соба",
+                "Куриное филе жареное",
+                "Лук репчатый",
+                "Морковь",
+                "Капуста пекинская",
+                "Перец болгарский",
+                "Фасоль стручковая",
+                "Масло растительное",
+                "Лук зеленый",
+                "Белый кунжут",
+                "Соус гамадари"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 7,
+                "carbs_g": 16,
+                "calories_kcal": 163
+            },
+            "price_rub": 430
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Тяхан с курицей",
+            "pieces": 1,
+            "weight_g": 330,
+            "composition": [
+                "Куриное филе",
+                "Лук репчатый",
+                "Морковь",
+                "Перец болгарский",
+                "Капуста пекинская",
+                "Фасоль стручковая",
+                "Масло растительное",
+                "Рис",
+                "Яйцо",
+                "Соус соевый",
+                "Чеснок",
+                "Лук зеленый",
+                "Масло кунжутное"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 18,
+                "fats_g": 7,
+                "carbs_g": 29,
+                "calories_kcal": 251
+            },
+            "price_rub": 330
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Удон с курицей в остро-сладком соусе",
+            "pieces": 1,
+            "weight_g": 340,
+            "composition": [
+                "Лапша удон",
+                "Куриное филе жареное",
+                "Лук репчатый",
+                "Морковь",
+                "Капуста пекинская",
+                "Перец болгарский",
+                "Фасоль стручковая",
+                "Масло растительное",
+                "Белый кунжут",
+                "Лук зеленый",
+                "Соус остро-сладкий"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 3,
+                "carbs_g": 25,
+                "calories_kcal": 163
+            },
+            "price_rub": 430
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Удон с морепродуктами в соусе Терияки",
+            "pieces": 1,
+            "weight_g": 320,
+            "composition": [
+                "Лапша удон",
+                "Кальмар",
+                "Креветки коктейльные",
+                "Мидии",
+                "Окунь",
+                "Лук репчатый",
+                "Морковь",
+                "Капуста пекинская",
+                "Перец болгарский",
+                "Фасоль стручковая",
+                "Масло растительное",
+                "Белый кунжут",
+                "Лук зеленый",
+                "Соус Терияки"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 3,
+                "carbs_g": 18,
+                "calories_kcal": 127
+            },
+            "price_rub": 500
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Том-ям суп с курицей",
+            "pieces": 1,
+            "weight_g": 550,
+            "composition": [
+                "Куриное филе жареное",
+                "Грибы шампиньоны",
+                "Кокосовое молоко",
+                "Рис",
+                "Паста том-ям",
+                "Соус шрирача",
+                "Чеснок",
+                "Лук зеленый",
+                "Кунжут черный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 6,
+                "carbs_g": 17,
+                "calories_kcal": 158
+            },
+            "price_rub": 369
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Солянка",
+            "pieces": 1,
+            "weight_g": 300,
+            "composition": [
+                "Огурцы маринованные",
+                "Ветчина",
+                "Лук репчатый",
+                "Паста томатная",
+                "Маслины",
+                "Колбаса пк",
+                "Масло растительное",
+                "Лавровый лист",
+                "Лимон",
+                "Соль",
+                "Перец черный молотый",
+                "Сметана",
+                "Укроп",
+                "Петрушка"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 15,
+                "carbs_g": 1,
+                "calories_kcal": 175
+            },
+            "price_rub": 315
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Грибной крем суп",
+            "pieces": 1,
+            "weight_g": 300,
+            "composition": [
+                "Грибы шампиньоны",
+                "Лук репчатый",
+                "Картофель",
+                "Соль",
+                "Масло растительное",
+                "Сливки",
+                "Молоко",
+                "Лук фри"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 1,
+                "fats_g": 2,
+                "carbs_g": 4,
+                "calories_kcal": 40
+            },
+            "price_rub": 215
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Тыквенный крем суп",
+            "pieces": 1,
+            "weight_g": 300,
+            "composition": [
+                "Тыква",
+                "Лук репчатый",
+                "Морковь",
+                "Масло растительное",
+                "Мед",
+                "Соль",
+                "Сливки",
+                "Молоко",
+                "Семечки тыквенные",
+                "Бекон жареный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 1,
+                "carbs_g": 4,
+                "calories_kcal": 36
+            },
+            "price_rub": 225
+        },
+        {
+            "category": "Горячее и Салаты",
+            "name": "Суп куриный с лапшой",
+            "pieces": 1,
+            "weight_g": 300,
+            "composition": [
+                "Бульон куриный",
+                "Лапша домашняя",
+                "Морковь",
+                "Лук репчатый",
+                "Лавровый лист",
+                "Курица отварная",
+                "Масло растительное",
+                "Соль",
+                "Перец черный молотый",
+                "Укроп",
+                "Петрушка"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 3,
+                "carbs_g": 11,
+                "calories_kcal": 95
+            },
+            "price_rub": 285
+        },
+        {
+            "category": "Десерты",
+            "name": "Сырники",
+            "pieces": 1,
+            "weight_g": 150,
+            "composition": [
+                "Творог",
+                "сахар",
+                "мука пшеничная хлебопекарная",
+                "масло подсолнечное",
+                "яйцо",
+                "соль",
+                "ароматизатор натуральный ваниль",
+                "карамельный топинг"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 11,
+                "carbs_g": 44,
+                "calories_kcal": 289
+            },
+            "price_rub": 209
+        },
+        {
+            "category": "Десерты",
+            "name": "Тирамису",
+            "pieces": 1,
+            "weight_g": 90,
+            "composition": [
+                "Нежный бисквит",
+                "пропитанный кофе",
+                "воздушный сливочный крем",
+                "какао"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 19,
+                "carbs_g": 34,
+                "calories_kcal": 324
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Десерты",
+            "name": "Шоколадный мусс",
+            "pieces": 1,
+            "weight_g": 90,
+            "composition": [
+                "Нежные сливки",
+                "терпкий шоколад",
+                "воздушный десерт в креманке"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 21,
+                "carbs_g": 29,
+                "calories_kcal": 319
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Десерты",
+            "name": "Малина - Фисташка",
+            "pieces": 1,
+            "weight_g": 90,
+            "composition": [
+                "Воздушный бисквит",
+                "сироп",
+                "малиновый конфитюр",
+                "сливочный крем"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 21,
+                "carbs_g": 50,
+                "calories_kcal": 409
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Десерты",
+            "name": "Клубника со сливками",
+            "pieces": 1,
+            "weight_g": 90,
+            "composition": [
+                "Воздушный бисквит",
+                "клубничный конфитюр",
+                "сливочный крем"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 21,
+                "carbs_g": 50,
+                "calories_kcal": 409
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Десерты",
+            "name": "Донат кола",
+            "pieces": 1,
+            "weight_g": 55,
+            "composition": [
+                "Мука пшеничная",
+                "вода",
+                "глазурь жировая ароматизированная",
+                "сахар",
+                "дрожжи",
+                "соль",
+                "сахарные посыпки"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 21,
+                "carbs_g": 47,
+                "calories_kcal": 397
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Десерты",
+            "name": "Донат капучино",
+            "pieces": 1,
+            "weight_g": 55,
+            "composition": [
+                "Мука пшеничная",
+                "вода",
+                "глазурь жировая ароматизированная",
+                "сахар",
+                "дрожжи",
+                "соль",
+                "сахарные посыпки"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 21,
+                "carbs_g": 47,
+                "calories_kcal": 397
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Десерты",
+            "name": "Чизкейк Баскский",
+            "pieces": 1,
+            "weight_g": 100,
+            "composition": [
+                "Чизкейк Баскский"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 27,
+                "carbs_g": 28,
+                "calories_kcal": 390
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Десерты",
+            "name": "Чизкейк классика",
+            "pieces": 1,
+            "weight_g": 100,
+            "composition": [
+                "Классический чизкейк"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 26,
+                "carbs_g": 35,
+                "calories_kcal": 398
+            },
+            "price_rub": 219
+        },
+        {
+            "category": "Десерты",
+            "name": "Чизкейк Нью-Йорк",
+            "pieces": 1,
+            "weight_g": 98,
+            "composition": [
+                "Классический творожный десерт"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 22,
+                "carbs_g": 26,
+                "calories_kcal": 329
+            },
+            "price_rub": 219
+        },
+        {
+            "category": "Десерты",
+            "name": "Чизкейк Нью-Йорк (вишня)",
+            "pieces": 1,
+            "weight_g": 108,
+            "composition": [
+                "Классический творожный десерт с вишневым топпингом"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 22,
+                "carbs_g": 26,
+                "calories_kcal": 329
+            },
+            "price_rub": 229
+        },
+        {
+            "category": "Десерты",
+            "name": "Чизкейк Нью-Йорк (карамель)",
+            "pieces": 1,
+            "weight_g": 108,
+            "composition": [
+                "Классический творожный десерт с карамельным топпингом"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 22,
+                "carbs_g": 26,
+                "calories_kcal": 329
+            },
+            "price_rub": 229
+        },
+        {
+            "category": "Десерты",
+            "name": "Чизкейк Нью-Йорк (клубника)",
+            "pieces": 1,
+            "weight_g": 108,
+            "composition": [
+                "Классический творожный десерт с клубничным топпингом"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 22,
+                "carbs_g": 26,
+                "calories_kcal": 329
+            },
+            "price_rub": 229
+        },
+        {
+            "category": "Десерты",
+            "name": "Чизкейк Шоколадный",
+            "pieces": 1,
+            "weight_g": 98,
+            "composition": [
+                "Классический творожный десерт в шоколадном исполнении"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 22,
+                "carbs_g": 26,
+                "calories_kcal": 329
+            },
+            "price_rub": 219
+        },
+        {
+            "category": "Напитки",
+            "name": "Bon Aqua газированная: 0,5 л",
+            "pieces": 1,
+            "weight_g": 500,
+            "composition": [
+                "Bon Aqua газированная"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 0,
+                "calories_kcal": 0
+            },
+            "price_rub": 89
+        },
+        {
+            "category": "Напитки",
+            "name": "Bon Aqua негазированная: 0,5 л",
+            "pieces": 1,
+            "weight_g": 500,
+            "composition": [
+                "Bon Aqua негазированная"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 0,
+                "calories_kcal": 0
+            },
+            "price_rub": 89
+        },
+        {
+            "category": "Напитки",
+            "name": "Добрый cola: 0,5 л",
+            "pieces": 1,
+            "weight_g": 500,
+            "composition": [
+                "Добрый cola"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 10,
+                "carbs_g": 42,
+                "calories_kcal": 0
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Напитки",
+            "name": "Добрый cola (Zero): 0,5 л",
+            "pieces": 1,
+            "weight_g": 500,
+            "composition": [
+                "Добрый cola (Zero)"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 0,
+                "calories_kcal": 0
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Напитки",
+            "name": "Добрый cola: 1 л",
+            "pieces": 1,
+            "weight_g": 1000,
+            "composition": [
+                "Добрый cola"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 10,
+                "carbs_g": 42,
+                "calories_kcal": 0
+            },
+            "price_rub": 189
+        },
+        {
+            "category": "Напитки",
+            "name": "Добрый Апельсин: 0,5 л",
+            "pieces": 1,
+            "weight_g": 500,
+            "composition": [
+                "Добрый Апельсин"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 8,
+                "carbs_g": 32,
+                "calories_kcal": 0
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Напитки",
+            "name": "Добрый Лимон-лайм: 0,5 л",
+            "pieces": 1,
+            "weight_g": 500,
+            "composition": [
+                "Добрый Лимон-лайм"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 4,
+                "carbs_g": 18,
+                "calories_kcal": 0
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Напитки",
+            "name": "Морс (клюква): 0,45 л",
+            "pieces": 1,
+            "weight_g": 450,
+            "composition": [
+                "Морс клюква"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 8,
+                "carbs_g": 32,
+                "calories_kcal": 0
+            },
+            "price_rub": 169
+        },
+        {
+            "category": "Напитки",
+            "name": "Морс (облепиха): 0,45 л",
+            "pieces": 1,
+            "weight_g": 450,
+            "composition": [
+                "Морс облепиха"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 9,
+                "carbs_g": 36,
+                "calories_kcal": 0
+            },
+            "price_rub": 169
+        },
+        {
+            "category": "Напитки",
+            "name": "Морс (смородина): 0,45 л",
+            "pieces": 1,
+            "weight_g": 450,
+            "composition": [
+                "Морс смородина"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 9,
+                "carbs_g": 36,
+                "calories_kcal": 0
+            },
+            "price_rub": 169
+        },
+        {
+            "category": "Напитки",
+            "name": "Сок Добрый в ассортименте: 1 л",
+            "pieces": 1,
+            "weight_g": 1000,
+            "composition": [
+                "Сок Добрый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 11,
+                "carbs_g": 46,
+                "calories_kcal": 0
+            },
+            "price_rub": 249
+        },
+        {
+            "category": "Напитки",
+            "name": "Сок в ассортименте: 0,2 л",
+            "pieces": 1,
+            "weight_g": 200,
+            "composition": [
+                "Сок в ассортименте"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 11,
+                "carbs_g": 46,
+                "calories_kcal": 0
+            },
+            "price_rub": 79
+        },
+        {
+            "category": "Напитки",
+            "name": "Чай Rich: зеленый 0,5 л",
+            "pieces": 1,
+            "weight_g": 500,
+            "composition": [
+                "Чай Rich зеленый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 7,
+                "carbs_g": 28,
+                "calories_kcal": 0
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Напитки",
+            "name": "Чай Rich: черный 0,5 л",
+            "pieces": 1,
+            "weight_g": 500,
+            "composition": [
+                "Чай Rich черный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 7,
+                "carbs_g": 28,
+                "calories_kcal": 0
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Напитки",
+            "name": "Добрый Апельсин: 0,33 л",
+            "pieces": 1,
+            "weight_g": 330,
+            "composition": [
+                "Добрый Апельсин"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 8,
+                "carbs_g": 32,
+                "calories_kcal": 0
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Напитки",
+            "name": "Добрый Лимон-лайм: 0,33 л",
+            "pieces": 1,
+            "weight_g": 330,
+            "composition": [
+                "Добрый Лимон-лайм"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 8,
+                "carbs_g": 32,
+                "calories_kcal": 0
+            },
+            "price_rub": 139
+        },
+        {
+            "category": "Добавки",
+            "name": "Соевый соус",
+            "pieces": 1,
+            "weight_g": 30,
+            "composition": [
+                "Соус соевый Дункан, сахар, вода"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 4,
+                "fats_g": 0,
+                "carbs_g": 36,
+                "calories_kcal": 0
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Васаби",
+            "pieces": 1,
+            "weight_g": 10,
+            "composition": [
+                "Васаби (японский хрен), горчица, вода"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 14,
+                "fats_g": 9,
+                "carbs_g": 28,
+                "calories_kcal": 255
+            },
+            "price_rub": 30
+        },
+        {
+            "category": "Добавки",
+            "name": "Имбирь",
+            "pieces": 1,
+            "weight_g": 30,
+            "composition": [
+                "Имбирь, вода, соль, уксусная кислота, лимонная кислота, сорбат калия, сахарин натрия, глутамат натрия, аспартам, пищевой краситель"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 10,
+                "calories_kcal": 40
+            },
+            "price_rub": 45
+        },
+        {
+            "category": "Добавки",
+            "name": "Палочки, салфетки, зубочистка",
+            "pieces": 1,
+            "weight_g": 20,
+            "composition": [
+                "Палочки, салфетка, зубочистка"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 0,
+                "calories_kcal": 0
+            },
+            "price_rub": 5
+        },
+        {
+            "category": "Добавки",
+            "name": "Вилка",
+            "pieces": 1,
+            "weight_g": 1,
+            "composition": [
+                "Вилка"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 0,
+                "calories_kcal": 0
+            },
+            "price_rub": 5
+        },
+        {
+            "category": "Добавки",
+            "name": "Ложка",
+            "pieces": 1,
+            "weight_g": 1,
+            "composition": [
+                "Ложка"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 0,
+                "calories_kcal": 0
+            },
+            "price_rub": 5
+        },
+        {
+            "category": "Добавки",
+            "name": "Майонезный соус",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Майонез, перец черный молотый, лимонная кислота, укроп, чеснок сушёный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 63,
+                "carbs_g": 3,
+                "calories_kcal": 602
+            },
+            "price_rub": 30
+        },
+        {
+            "category": "Добавки",
+            "name": "Томатный соус",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Соус томатный для пиццы, лук репчатый, масло подсолнечное, уксус столовый, соль, перец черный молотый"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 8,
+                "carbs_g": 12,
+                "calories_kcal": 144
+            },
+            "price_rub": 30
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Лава",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Майонез, сыр сливочный, икра масаго красная"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 1,
+                "fats_g": 54,
+                "carbs_g": 0,
+                "calories_kcal": 490
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Гриль",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Вода, масло подсолнечное, сахар, томатная паста, яичный желток, соль, чеснок, лук репчатый, паприка, кориандр"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 1,
+                "fats_g": 32,
+                "carbs_g": 9,
+                "calories_kcal": 330
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Чесночный",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Майонез, чесночный порошок гранулированный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 66,
+                "carbs_g": 0,
+                "calories_kcal": 600
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Гавайский",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Майонез, соус сладкий-чили"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 50,
+                "carbs_g": 10,
+                "calories_kcal": 490
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Кимчи",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Вода, сахар, чеснок, паприка, уксус, соль, морковь, яблочный сок, порошок чили, имбирь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 1,
+                "carbs_g": 15,
+                "calories_kcal": 94
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Сметанно-грибной",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Вода, масло подсолнечное, яичный желток, сахар, соль, шампиньоны сушеные, лук сушеный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 42,
+                "carbs_g": 5,
+                "calories_kcal": 400
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Цезарь",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Масло подсолнечное, вода, яичный желток, соль, сахар, базилик, орегано, уксус, чеснок, сырный порошок"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 1,
+                "fats_g": 38,
+                "carbs_g": 13,
+                "calories_kcal": 400
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Том-ям",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Майонез, паста том-ям, соус шрирачи"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 1,
+                "fats_g": 44,
+                "carbs_g": 9,
+                "calories_kcal": 440
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Спайси",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Майонез, Кимчи бейс паста, перец красный (молотый), кунжутное масло"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 3,
+                "fats_g": 60,
+                "carbs_g": 3,
+                "calories_kcal": 574
+            },
+            "price_rub": 30
+        },
+        {
+            "category": "Добавки",
+            "name": "Фирменный сырный соус",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Майонез, Паприка молотая, Сыр пармезан"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 62,
+                "carbs_g": 2,
+                "calories_kcal": 595
+            },
+            "price_rub": 30
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Свит чили",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Вода, сахар, соль, перец чили, чеснок"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 0,
+                "fats_g": 0,
+                "carbs_g": 40,
+                "calories_kcal": 166
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Терияки",
+            "pieces": 1,
+            "weight_g": 40,
+            "composition": [
+                "Соус соевый, мирин (сладкое рисовое вино), чеснок, имбирь, соус рыбный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 0,
+                "carbs_g": 15,
+                "calories_kcal": 86
+            },
+            "price_rub": 30
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Heinz сырный",
+            "pieces": 1,
+            "weight_g": 25,
+            "composition": [
+                "Соус Heinz сырный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 2,
+                "fats_g": 33,
+                "carbs_g": 6,
+                "calories_kcal": 329
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Добавки",
+            "name": "Соус Heinz томатный",
+            "pieces": 1,
+            "weight_g": 25,
+            "composition": [
+                "Соус Heinz томатный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 1,
+                "fats_g": 0,
+                "carbs_g": 25,
+                "calories_kcal": 105
+            },
+            "price_rub": 40
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Выпускной",
+            "pieces": 70,
+            "weight_g": 1883,
+            "composition": [
+                "Запеченный с крабом макси",
+                "Запеченный с курицей макси",
+                "Император макси",
+                "Курица свит чили макси",
+                "Платина макси",
+                "Ролл Кимпаб с курицей",
+                "Такуаб макси"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 8,
+                "carbs_g": 24,
+                "calories_kcal": 196
+            },
+            "price_rub": 2190
+        },
+        {
+            "category": "Сеты",
+            "name": "Первосет",
+            "pieces": 48,
+            "weight_g": 1348,
+            "composition": [
+                "Запеченный с крабом",
+                "Красное море",
+                "Спайси курочка",
+                "Такуаб",
+                "Темпурный Цезарь",
+                "Филадельфия лайт"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 9,
+                "carbs_g": 21,
+                "calories_kcal": 185
+            },
+            "price_rub": 1640
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Легенда",
+            "pieces": 53,
+            "weight_g": 1279,
+            "composition": [
+                "Калифорния с крабом",
+                "Кимпаб с тунцом 1/2",
+                "Ролл Лава с Крабом",
+                "Ролл с огурцом",
+                "Ролл Форилье",
+                "Темпурный Цезарь",
+                "Филадельфия лайт"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 6,
+                "fats_g": 9,
+                "carbs_g": 22,
+                "calories_kcal": 190
+            },
+            "price_rub": 1590
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Нейросет хот",
+            "pieces": 48,
+            "weight_g": 1256,
+            "composition": [
+                "Запеченный Майами",
+                "Запеченный рассвет",
+                "Ролл Драйв",
+                "Ролл Лунный",
+                "Ролл Рататуй",
+                "Ролл Фламинго"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 8,
+                "carbs_g": 26,
+                "calories_kcal": 204
+            },
+            "price_rub": 1749
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Хочука",
+            "pieces": 32,
+            "weight_g": 856,
+            "composition": [
+                "Запеченная калифорния 1/2",
+                "Калифорния с лососем 1/2",
+                "Ролл Гиндза",
+                "Ролл Таманеги 1/2",
+                "Ролл Терияки темпура",
+                "Филадельфия 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 10,
+                "carbs_g": 24,
+                "calories_kcal": 218
+            },
+            "price_rub": 1570
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Запеченный",
+            "pieces": 32,
+            "weight_g": 916,
+            "composition": [
+                "Запеченный Майами",
+                "Ролл Чатер",
+                "Темпурный с лососем терияки",
+                "Темпурный Цезарь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 12,
+                "carbs_g": 24,
+                "calories_kcal": 236
+            },
+            "price_rub": 1200
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Дорогие коллеги",
+            "pieces": 1,
+            "weight_g": 2105,
+            "composition": [
+                "Добрый cola 1 л",
+                "Крашсет",
+                "Пепперони 25см",
+                "Пицца Деревенская 25см",
+                "Три сыра 25см"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 7,
+                "carbs_g": 22,
+                "calories_kcal": 179
+            },
+            "price_rub": 2989
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Гигасет",
+            "pieces": 82,
+            "weight_g": 2126,
+            "composition": [
+                "Вегас",
+                "Запеченный аркаим",
+                "Запеченный рассвет",
+                "Момент",
+                "Ролл Запеченный морской волк",
+                "Ролл Зелёная миля",
+                "Ролл Кимпаб с курицей",
+                "Ролл Малибу",
+                "Ролл Метеор",
+                "Ролл Фламинго"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 10,
+                "carbs_g": 23,
+                "calories_kcal": 210
+            },
+            "price_rub": 2279
+        },
+        {
+            "category": "Сеты",
+            "name": "Крашсет",
+            "pieces": 44,
+            "weight_g": 1010,
+            "composition": [
+                "Ролл Капоэйра",
+                "Ролл с лососем",
+                "Ролл Фокус",
+                "Темпурный Цезарь",
+                "Филадельфия лайт 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 23,
+                "calories_kcal": 196
+            },
+            "price_rub": 1679
+        },
+        {
+            "category": "Сеты",
+            "name": "Пит-Стоп",
+            "pieces": 16,
+            "weight_g": 388,
+            "composition": [
+                "Ролл Лава с Креветкой",
+                "Филадельфия лайт"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 7,
+                "carbs_g": 23,
+                "calories_kcal": 175
+            },
+            "price_rub": 979
+        },
+        {
+            "category": "Сеты",
+            "name": "УльтраХит",
+            "pieces": 56,
+            "weight_g": 1367,
+            "composition": [
+                "Вегас",
+                "Калифорния с крабом",
+                "Момент",
+                "Ролл Запеченный морской волк",
+                "Ролл Странник",
+                "Ролл Фокус",
+                "Эверест"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 9,
+                "carbs_g": 23,
+                "calories_kcal": 205
+            },
+            "price_rub": 1679
+        },
+        {
+            "category": "Сеты",
+            "name": "Удача",
+            "pieces": 28,
+            "weight_g": 724,
+            "composition": [
+                "Ролл Запеченный морской волк",
+                "Ролл Фламинго",
+                "Ролл Фокус",
+                "Филадельфия лайт 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 10,
+                "carbs_g": 21,
+                "calories_kcal": 206
+            },
+            "price_rub": 1179
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Мафия",
+            "pieces": 74,
+            "weight_g": 1990,
+            "composition": [
+                "Запеченный рассвет",
+                "Кимпаб с тунцом",
+                "Ролл Запеченный морской волк",
+                "Ролл Крабовая шапочка",
+                "Ролл Курочка под сыром",
+                "Ролл Оникс",
+                "Ролл Фокус",
+                "Ролл Чикен белс",
+                "Темпурный Цезарь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 10,
+                "carbs_g": 23,
+                "calories_kcal": 214
+            },
+            "price_rub": 2299
+        },
+        {
+            "category": "Сеты",
+            "name": "Суперсет",
+            "pieces": 54,
+            "weight_g": 1294,
+            "composition": [
+                "Запеченный с курицей макси",
+                "Калифорния с крабом",
+                "Притяжение",
+                "Ролл Запеченный морской волк",
+                "Ролл Капоэйра",
+                "Ролл Чикен белс",
+                "Темпурный Цезарь 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 9,
+                "carbs_g": 24,
+                "calories_kcal": 205
+            },
+            "price_rub": 1719
+        },
+        {
+            "category": "Сеты",
+            "name": "Нейросет",
+            "pieces": 52,
+            "weight_g": 1049,
+            "composition": [
+                "Калифорния с крабом 1/2",
+                "Момент",
+                "Ролл Геншин 1/2",
+                "Ролл Зелёная миля 1/2",
+                "Ролл Капоэйра",
+                "Ролл с тунцом",
+                "Ролл Странник",
+                "Ролл Хруст"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 6,
+                "carbs_g": 23,
+                "calories_kcal": 182
+            },
+            "price_rub": 1429
+        },
+        {
+            "category": "Сеты",
+            "name": "Бомбалейло",
+            "pieces": 24,
+            "weight_g": 795,
+            "composition": [
+                "Бомбяо с лососем терияки",
+                "Ролл Геншин",
+                "Ролл Крабовая шапочка",
+                "Ролл Курочка под сыром"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 14,
+                "carbs_g": 21,
+                "calories_kcal": 250
+            },
+            "price_rub": 1079
+        },
+        {
+            "category": "Сеты",
+            "name": "Киберсет",
+            "pieces": 32,
+            "weight_g": 858,
+            "composition": [
+                "Ролл Геншин",
+                "Ролл Драйв",
+                "Ролл Мистер Крабс",
+                "Ролл Хруст"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 9,
+                "carbs_g": 25,
+                "calories_kcal": 213
+            },
+            "price_rub": 949
+        },
+        {
+            "category": "Сеты",
+            "name": "Мини сет",
+            "pieces": 16,
+            "weight_g": 408,
+            "composition": [
+                "Магуро с кунжутом",
+                "Ролл Сейко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 26,
+                "calories_kcal": 208
+            },
+            "price_rub": 609
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Лайк",
+            "pieces": 24,
+            "weight_g": 568,
+            "composition": [
+                "Калифорния с крабом",
+                "Момент",
+                "Ролл Сейко"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 6,
+                "carbs_g": 25,
+                "calories_kcal": 182
+            },
+            "price_rub": 799
+        },
+        {
+            "category": "Сеты",
+            "name": "Мегасет",
+            "pieces": 24,
+            "weight_g": 654,
+            "composition": [
+                "Ролл Император",
+                "Ролл Кайдзен 1/2",
+                "Филадельфия под угрём",
+                "Филадельфия 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 10,
+                "carbs_g": 22,
+                "calories_kcal": 218
+            },
+            "price_rub": 1929
+        },
+        {
+            "category": "Сеты",
+            "name": "Комбо Кинобомба",
+            "pieces": 1,
+            "weight_g": 1098,
+            "composition": [
+                "1/2 Домашняя 30см",
+                "1/2 Прованс 30см",
+                "Калифорния с крабом 1/2",
+                "Темпурный с креветками 1/2",
+                "Темпурный Цезарь 1/2",
+                "Филадельфия лайт 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 7,
+                "carbs_g": 14,
+                "calories_kcal": 139
+            },
+            "price_rub": 1240
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Лава",
+            "pieces": 24,
+            "weight_g": 600,
+            "composition": [
+                "Ролл Лава с Крабом",
+                "Ролл Лава с Креветкой",
+                "Ролл Лава с Лососем"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 17,
+                "carbs_g": 21,
+                "calories_kcal": 257
+            },
+            "price_rub": 879
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Запеченная Лава",
+            "pieces": 24,
+            "weight_g": 621,
+            "composition": [
+                "Ролл Лава с Крабом Запеченный",
+                "Ролл Лава с Креветкой Запеченный",
+                "Ролл Лава с Лососем Запеченный"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 5,
+                "fats_g": 17,
+                "carbs_g": 23,
+                "calories_kcal": 265
+            },
+            "price_rub": 929
+        },
+        {
+            "category": "Сеты",
+            "name": "Фиш сет",
+            "pieces": 28,
+            "weight_g": 771,
+            "composition": [
+                "Нежный угорь 1/2",
+                "Ролл Император",
+                "Ролл Крабовая шапочка",
+                "Филадельфия"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 11,
+                "carbs_g": 21,
+                "calories_kcal": 211
+            },
+            "price_rub": 1929
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Микс",
+            "pieces": 40,
+            "weight_g": 1079,
+            "composition": [
+                "Калифорния с крабом",
+                "Нежный угорь 1/2",
+                "Ролл Император",
+                "Ролл Фокус",
+                "Филадельфия лайт 1/2",
+                "Царь-лосось"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 9,
+                "carbs_g": 24,
+                "calories_kcal": 209
+            },
+            "price_rub": 2129
+        },
+        {
+            "category": "Сеты",
+            "name": "БИГБУМ сет",
+            "pieces": 52,
+            "weight_g": 1290,
+            "composition": [
+                "Закат креветки",
+                "Калифорния с крабом",
+                "Ролл Бонито",
+                "Ролл Лунный",
+                "Ролл Немо",
+                "Темпурный Цезарь 1/2",
+                "Филадельфия лайт"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 7,
+                "fats_g": 8,
+                "carbs_g": 23,
+                "calories_kcal": 192
+            },
+            "price_rub": 2329
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Ниндзя",
+            "pieces": 52,
+            "weight_g": 1323,
+            "composition": [
+                "Запеченный рассвет",
+                "Ролл Запеченный морской волк",
+                "Ролл Немо",
+                "Ролл Нирвана",
+                "Ролл Оникс",
+                "Ролл Фламинго 1/2",
+                "Ролл Фокус"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 25,
+                "calories_kcal": 204
+            },
+            "price_rub": 1599
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Исключительный",
+            "pieces": 40,
+            "weight_g": 994,
+            "composition": [
+                "Ролл Запеченный морской волк",
+                "Ролл Император",
+                "Ролл Кентавр",
+                "Ролл Чикен белс",
+                "Спайси курочка"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 10,
+                "carbs_g": 23,
+                "calories_kcal": 218
+            },
+            "price_rub": 1229
+        },
+        {
+            "category": "Сеты",
+            "name": "Максимальная скидка",
+            "pieces": 32,
+            "weight_g": 720,
+            "composition": [
+                "Ролл Кентавр",
+                "Ролл Нирвана",
+                "Ролл Странник",
+                "Эби-крим"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 10,
+                "carbs_g": 24,
+                "calories_kcal": 218
+            },
+            "price_rub": 1466
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Изи",
+            "pieces": 40,
+            "weight_g": 786,
+            "composition": [
+                "Калифорния с лососем 1/2",
+                "Кенгамине 1/2",
+                "Ролл с огурцом",
+                "Ролл с тунцом",
+                "Ролл Хруст",
+                "Тамаго 1/2",
+                "Филадельфия лайт 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 5,
+                "carbs_g": 24,
+                "calories_kcal": 177
+            },
+            "price_rub": 1459
+        },
+        {
+            "category": "Сеты",
+            "name": "Ходовой",
+            "pieces": 32,
+            "weight_g": 904,
+            "composition": [
+                "Ролл Теплый",
+                "Ролл Фламинго",
+                "Ролл Фокус",
+                "Темпурный Цезарь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 9,
+                "fats_g": 9,
+                "carbs_g": 24,
+                "calories_kcal": 213
+            },
+            "price_rub": 1229
+        },
+        {
+            "category": "Сеты",
+            "name": "Максимальная выгода",
+            "pieces": 76,
+            "weight_g": 1909,
+            "composition": [
+                "Ролл Запеченный морской волк",
+                "Ролл Метеор",
+                "Ролл Нирвана 1/2",
+                "Ролл Оникс",
+                "Ролл Теплый",
+                "Ролл Феерия",
+                "Ролл Фламинго",
+                "Ролл Фокус",
+                "Саке крим",
+                "Салют"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 8,
+                "fats_g": 8,
+                "carbs_g": 24,
+                "calories_kcal": 200
+            },
+            "price_rub": 2379
+        },
+        {
+            "category": "Сеты",
+            "name": "Соло сет",
+            "pieces": 16,
+            "weight_g": 446,
+            "composition": [
+                "Ролл Леди Миди",
+                "Ролл Факел"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 13,
+                "carbs_g": 25,
+                "calories_kcal": 257
+            },
+            "price_rub": 640
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Нежный",
+            "pieces": 16,
+            "weight_g": 328,
+            "composition": [
+                "Ролл Кентавр",
+                "Ролл Хоккайдо"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 20,
+                "fats_g": 25,
+                "carbs_g": 64,
+                "calories_kcal": 560
+            },
+            "price_rub": 658
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Путь самурая",
+            "pieces": 16,
+            "weight_g": 328,
+            "composition": [
+                "Запеченное горячее сердце самурая",
+                "Ролл Кентавр"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 24,
+                "fats_g": 28,
+                "carbs_g": 59,
+                "calories_kcal": 580
+            },
+            "price_rub": 738
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Три стихии",
+            "pieces": 24,
+            "weight_g": 540,
+            "composition": [
+                "Закат креветки",
+                "Ролл Кентавр",
+                "Темпурный Цезарь"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 33,
+                "fats_g": 45,
+                "carbs_g": 94,
+                "calories_kcal": 900
+            },
+            "price_rub": 1087
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Лёгкий микс",
+            "pieces": 24,
+            "weight_g": 316,
+            "composition": [
+                "Капоэйра",
+                "Ролл с креветкой",
+                "Ролл с лососем"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 25,
+                "fats_g": 15,
+                "carbs_g": 82,
+                "calories_kcal": 574
+            },
+            "price_rub": 767
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Мягкий огонь",
+            "pieces": 16,
+            "weight_g": 327,
+            "composition": [
+                "Ролл с креветкой",
+                "Филадельфия"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 17,
+                "fats_g": 11,
+                "carbs_g": 51,
+                "calories_kcal": 376
+            },
+            "price_rub": 909
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Запечённый баланс",
+            "pieces": 24,
+            "weight_g": 608,
+            "composition": [
+                "Закат креветки",
+                "Запеченная калифорния",
+                "Ролл Кентавр"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 32,
+                "fats_g": 43,
+                "carbs_g": 88,
+                "calories_kcal": 857
+            },
+            "price_rub": 1267
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Квартет",
+            "pieces": 32,
+            "weight_g": 503,
+            "composition": [
+                "Ролл с креветкой",
+                "Ролл с лососем",
+                "Ролл с огурцом",
+                "Филадельфия лайт"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 28,
+                "fats_g": 16,
+                "carbs_g": 105,
+                "calories_kcal": 690
+            },
+            "price_rub": 1156
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Темпурный взрыв",
+            "pieces": 32,
+            "weight_g": 1029,
+            "composition": [
+                "Темпурный с креветками",
+                "Темпурный с лососем терияки",
+                "Темпурный Цезарь",
+                "Техасская резня"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 39,
+                "fats_g": 59,
+                "carbs_g": 138,
+                "calories_kcal": 1230
+            },
+            "price_rub": 1546
+        },
+        {
+            "category": "Сеты",
+            "name": "Сет Горячий максимум",
+            "pieces": 32,
+            "weight_g": 870,
+            "composition": [
+                "Запеченное горячее сердце самурая",
+                "Запеченный Майами",
+                "Калифорния с крабом",
+                "Техасская резня"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 45,
+                "fats_g": 55,
+                "carbs_g": 119,
+                "calories_kcal": 1152
+            },
+            "price_rub": 1396
+        },
+        {
+            "category": "Сеты",
+            "name": "Хрустящий дуэт",
+            "pieces": 8,
+            "weight_g": 259,
+            "composition": [
+                "Темпурная филадельфия 1/2",
+                "Темпурный Цезарь 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 18,
+                "fats_g": 25,
+                "carbs_g": 51,
+                "calories_kcal": 500
+            },
+            "price_rub": 448
+        },
+        {
+            "category": "Сеты",
+            "name": "Огненное сердце",
+            "pieces": 8,
+            "weight_g": 215,
+            "composition": [
+                "Запеченное горячее сердце самурая 1/2",
+                "Запеченный Майами 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 19,
+                "fats_g": 22,
+                "carbs_g": 43,
+                "calories_kcal": 450
+            },
+            "price_rub": 418
+        },
+        {
+            "category": "Сеты",
+            "name": "Креветочный закат",
+            "pieces": 8,
+            "weight_g": 222,
+            "composition": [
+                "Закат креветки 1/2",
+                "Запеченная калифорния 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 16,
+                "fats_g": 23,
+                "carbs_g": 47,
+                "calories_kcal": 460
+            },
+            "price_rub": 508
+        },
+        {
+            "category": "Сеты",
+            "name": "Баланс вкуса",
+            "pieces": 12,
+            "weight_g": 214,
+            "composition": [
+                "Ролл с огурцом",
+                "Ролл Филадельфия классика 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 10,
+                "fats_g": 10,
+                "carbs_g": 44,
+                "calories_kcal": 310
+            },
+            "price_rub": 448
+        },
+        {
+            "category": "Сеты",
+            "name": "Лёгкая классика",
+            "pieces": 8,
+            "weight_g": 192,
+            "composition": [
+                "Калифорния с крабом 1/2",
+                "Филадельфия лайт 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 13,
+                "fats_g": 13,
+                "carbs_g": 42,
+                "calories_kcal": 340
+            },
+            "price_rub": 388
+        },
+        {
+            "category": "Сеты",
+            "name": "Самурайский удар",
+            "pieces": 8,
+            "weight_g": 240,
+            "composition": [
+                "Запеченное горячее сердце самурая 1/2",
+                "Техасская резня 1/2"
+            ],
+            "nutrition_per_100g": {
+                "proteins_g": 19,
+                "fats_g": 22,
+                "carbs_g": 47,
+                "calories_kcal": 470
+            },
+            "price_rub": 408
+        }
+    ]
+}
