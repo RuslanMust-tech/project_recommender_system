@@ -2,10 +2,12 @@ from fastapi import FastAPI
 
 from app.api.api_v1 import api_router
 from app.core.config import get_settings
+from app.db.admin import setup_admin
 
 settings = get_settings()
 app = FastAPI(title=settings.app_name, version="0.1")
 app.include_router(api_router, prefix="/api/v1")
+setup_admin(app)
 
 
 @app.get("/", tags=["root"])

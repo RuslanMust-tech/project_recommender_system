@@ -1,16 +1,13 @@
-from sqlalchemy import create_engine, Column, Integer, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship, sessionmaker
+from sqlalchemy import Column, Integer
+from sqlalchemy.orm import relationship
 
-Base = declarative_base()
+from app.db.base import Base
 
 class User(Base):
-    __tablename__ = 'User'  # точно как в вашем запросе
+    __tablename__ = "User"
     
     id = Column(Integer, primary_key=True)
     phone_number = Column(Integer, nullable=False)
-    
-    # Связь с заказами (опционально, для удобства)
-    orders = relationship("Order", back_populates="user")
 
+    orders = relationship("Order", back_populates="user")
 
