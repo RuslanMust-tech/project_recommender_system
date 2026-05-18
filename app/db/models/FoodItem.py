@@ -30,6 +30,3 @@ class FoodItem(Base):
     
 
 
-# Создание всех таблиц (только для новых БД)
-engine = create_engine('sqlite:///farfor.db')
-Base.metadata.create_all(engine)  # Создаст таблицу, если её нет
