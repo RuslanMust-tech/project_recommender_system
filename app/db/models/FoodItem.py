@@ -21,10 +21,5 @@ class FoodItem(Base):
 
     orders = relationship("Order", back_populates="food_item")
 
-    def save_to_db(self, session: Session):
-        """Сохранить в БД"""
-        session.add(self)
-        session.commit()
-        return self.id
     
 

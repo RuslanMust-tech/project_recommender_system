@@ -3,9 +3,11 @@ from sqladmin import Admin, ModelView
 
 from app.core.config import get_settings
 from app.db.models import FoodItem, Order, User
+from app.db.base import Base
 
 settings = get_settings()
 engine = create_engine(settings.database_url, echo=False)
+Base.metadata.create_all(engine)
 
 
 class UserAdmin(ModelView, model=User):
