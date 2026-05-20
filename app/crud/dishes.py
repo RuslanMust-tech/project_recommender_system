@@ -11,7 +11,7 @@ class FoodItemCrud(IBaseCRUD):
         return item
     
     def read(self):
-        pass
+        select(User).where(User.name == "spongebob")
 
     def update(self):
         pass

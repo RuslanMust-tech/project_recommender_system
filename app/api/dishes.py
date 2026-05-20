@@ -6,10 +6,21 @@ from app.db.models.FoodItem import FoodItem
 from app.schemas.dish import FoodItemBase 
 router = APIRouter()
 
-@router.post("/penis", response_model=None, tags=["dishes"])
-def penis(dish_data: FoodItemBase, db: Session = Depends(get_db)):
+@router.post("/create", response_model=None, tags=["dishes"])
+def create(dish_data: FoodItemBase, db: Session = Depends(get_db)):
     crud = FoodItemCrud(db)
     print(dish_data.model_dump())
     dish = crud.create(dish_data.model_dump())
     return dish
+
+
+@router.post("/read_one", response_model=None, tags=["dishes"])
+def create(dish_data: FoodItemBase, db: Session = Depends(get_db)):
+    crud = FoodItemCrud(db)
+    print(dish_data.model_dump())
+    dish = crud.create(dish_data.model_dump())
+    return dish
+
+
+
 # реализация эндпоинтов для блюд 

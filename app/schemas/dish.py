@@ -23,10 +23,52 @@ class FoodItemBase(BaseModel):
             raise ValueError('Название не может быть пустым')
         return v.strip()
 
-    @field_validator('category')
-    @classmethod
-    def validate_category(cls, v: str) -> str:
-        allowed_categories = ['Роллы', 'main', 'salad', 'drink', 'dessert']
-        if v not in allowed_categories:
-            raise ValueError(f'Категория должна быть одной из: {allowed_categories}')
-        return v
+
+class FoodItemSearch(BaseModel):
+    """Универсальная схема поиска"""
+    # Точные совпадения
+    category: Optional[str] = Field(None)
+    name: Optional[str] = Field(None)
+    
+    # Частичное совпадение
+    name_like: Optional[str] = Field(None)
+    
+    # Диапазоны
+    price_min: Optional[int] = Field(None, ge=0)
+    price_max: Optional[int] = Field(None, ge=0)
+    
+    calories_min: Optional[int] = Field(None, ge=0)
+    calories_max: Optional[int] = Field(None, ge=0)
+    
+    weight_min: Optional[int] = Field(None, ge=0)
+    weight_max: Optional[int] = Field(None, ge=0)
+    
+    # Сортировка
+    sort_by: Optional[str] = Field(
+        None, 
+        description="Поле для сортировки (price_rub, calories_kcal, name)",
+        pattern="^(price_rub|calories_kcal|name)$"
+    )
+    sort_order: Optional[str] = Field(
+        "asc", 
+        description="Порядок сортировки (asc/desc)",
+        pattern="^(asc|desc)$"
+    )
+    
+    # Пагинация
+    limit: Optional[int] = Field(50, ge=1, le=100, description="Количество записей")
+    offset: Optional[int] = Field(0, ge=0, description="Пропустить записей")
+    
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "category": "Фрукты",
+                "name_like": "яб",
+                "price_min": 50,
+                "price_max": 150,
+                "calories_max": 100,
+                "sort_by": "price_rub",
+                "sort_order": "asc",
+                "limit": 20
+            }
+        }
