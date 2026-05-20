@@ -24,3 +24,5 @@ def create(dish_data: FoodItemBase, db: Session = Depends(get_db)):
 
 
 # реализация эндпоинтов для блюд 
+
+#CRUD
