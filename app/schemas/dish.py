@@ -5,13 +5,13 @@ from decimal import Decimal
 
 class FoodItemBase(BaseModel):
     """Базовые поля блюда"""
-    category: str = Field(..., min_length=1, max_length=50, description="Категория блюда")
-    name: str = Field(..., min_length=1, max_length=100, description="Название блюда")
-    pieces: Optional[int] = Field(None, ge=0, description="Количество штук")
-    weight_g: Optional[int] = Field(None, ge=0, description="Вес в граммах")
-    composition: Optional[List[str]] = Field(None, description="Состав блюда (JSON)")
-    proteins_g: Optional[float] = Field(None, ge=0, description="Белки в граммах")
-    fats_g: Optional[float] = Field(None, ge=0, description="Жиры в граммах")
+    category: str = Field(..., min_length=1, max_length=50)
+    name: str = Field(..., min_length=1, max_length=100)
+    pieces: Optional[int] = Field(None, ge=0)
+    weight_g: Optional[int] = Field(None, ge=0)
+    composition: Optional[List[str]] = Field(None, )
+    proteins_g: Optional[float] = Field(None, ge=0)
+    fats_g: Optional[float] = Field(None, ge=0, )
     carbs_g: Optional[float] = Field(None, ge=0)
     calories_kcal: Optional[int] = Field(None, ge=0)
     price_rub: int = Field(..., gt=0)
@@ -22,18 +22,28 @@ class FoodItemBase(BaseModel):
         if not v.strip():
             raise ValueError('Название не может быть пустым')
         return v.strip()
+    
+class FoodItemUpdate(FoodItemBase):
+    category: Optional[str] = Field(None, min_length=1, max_length=50)
+    name: Optional[str] = Field(None, min_length=1, max_length=100)
+    pieces: Optional[int] = Field(None, ge=0)
+    weight_g: Optional[int] = Field(None, ge=0)
+    composition: Optional[List[str]] = None
+    proteins_g: Optional[float] = Field(None, ge=0)
+    fats_g: Optional[float] = Field(None, ge=0)
+    carbs_g: Optional[float] = Field(None, ge=0)
+    calories_kcal: Optional[int] = Field(None, ge=0)
+    price_rub: Optional[int] = Field(None, gt=0)
 
+class FoodItemResponse(FoodItemBase):
+    pass
 
 class FoodItemSearch(BaseModel):
-    """Универсальная схема поиска"""
-    # Точные совпадения
     category: Optional[str] = Field(None)
     name: Optional[str] = Field(None)
     
-    # Частичное совпадение
     name_like: Optional[str] = Field(None)
     
-    # Диапазоны
     price_min: Optional[int] = Field(None, ge=0)
     price_max: Optional[int] = Field(None, ge=0)
     

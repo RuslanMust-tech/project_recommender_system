@@ -1,7 +1,7 @@
 import requests
 
 response = requests.post(
-    'http://localhost:8001/api/v1/dishes/create',
+    'http://localhost:8001/api/v1/dishes/',
     json={
         "category": "Роллы",
         "name": "Ролл Форилье",
