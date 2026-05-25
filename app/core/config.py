@@ -6,7 +6,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     app_name: str = "farfor-recommend"
-    database_url: str = "sqlite:///./app.db"
+    database_url: str = "sqlite:///./farfor.db"
     environment: str = "development"
 
     model_config = ConfigDict(
