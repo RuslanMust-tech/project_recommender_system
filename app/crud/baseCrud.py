@@ -41,7 +41,7 @@ class BaseCRUD(ABC, Generic[ModelType]):
         query = select(self.model)
         for key, value in kwargs.items():
             if hasattr(self.model, key):
-                query = query.where(getattr(self.model, key) == value)
+                query = query.where(getattr(self.model, key).contains(value))
         
         result = self.db.execute(query)
         return list(result.scalars().all())

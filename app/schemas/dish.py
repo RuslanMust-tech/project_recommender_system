@@ -1,5 +1,5 @@
 # здесь будут pydantic модели для блюд, которые будут использоваться в API и для валидации данных
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, ConfigDict
 from typing import Optional, List, Dict, Any
 from decimal import Decimal
 
@@ -15,6 +15,7 @@ class FoodItemBase(BaseModel):
     carbs_g: Optional[float] = Field(None, ge=0)
     calories_kcal: Optional[int] = Field(None, ge=0)
     price_rub: int = Field(..., gt=0)
+    model_config = ConfigDict(from_attributes=True)
 
     @field_validator('name')
     @classmethod
@@ -82,3 +83,5 @@ class FoodItemSearch(BaseModel):
                 "limit": 20
             }
         }
+
+        

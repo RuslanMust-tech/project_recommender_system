@@ -20,6 +20,7 @@ class FoodItem(Base):
     price_rub = Column(Integer)
 
     orders = relationship("Order", back_populates="food_item")
+    
 
     
 

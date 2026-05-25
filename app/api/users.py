@@ -1,5 +1,27 @@
-from fastapi import APIRouter
+# реализация эндпоинтов для блюд 
+from fastapi import Depends
+from typing import List
+from sqlalchemy.orm import Session
+from app.db.session import get_db
 
-router = APIRouter()
+from app.crud.users import UserCrud
+from app.db.models.User import User
+from app.schemas.user import UserBase, UserUpdate, UserResponse
+from app.api.baseRouter import BaseRouter
 
-# реализация эндпоинтов пользователей
+# Создаем роутер для блюд
+class UsersRouter(BaseRouter[UserCrud, User, UserBase, UserUpdate, UserResponse]):
+    def _setup_custom_routes(self):
+        pass
+
+# Создаем экземпляр роутера
+Users_router_instance = UsersRouter(
+    model_class=User,
+    crud_class=UserCrud,
+    create_schema=UserBase,
+    update_schema=UserUpdate,
+    response_schema=UserResponse,
+    response_model=None  # или можно указать свою модель ответа
+)
+Users_router_instance._setup_custom_routes()
+router = Users_router_instance.get_router()

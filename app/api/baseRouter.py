@@ -13,6 +13,7 @@ CrudModel = TypeVar('CrudModel')
 class BaseRouter(Generic[CrudModel, ModelType, CreateSchema, UpdateSchema, ResponseSchema]):
     def __init__(
         self,
+        model_class: Type[ModelType],
         crud_class: Type[CrudModel],
         create_schema: Type[CreateSchema],
         update_schema: Type[UpdateSchema],
@@ -20,6 +21,7 @@ class BaseRouter(Generic[CrudModel, ModelType, CreateSchema, UpdateSchema, Respo
         response_model = None
     ):
         self.router = APIRouter()
+        self.model_class = model_class
         self.crud_class = crud_class
         self.create_schema = create_schema
         self.update_schema = update_schema
@@ -63,13 +65,13 @@ class BaseRouter(Generic[CrudModel, ModelType, CreateSchema, UpdateSchema, Respo
     
     # Методы для переопределения в наследниках
     async def create(self, item: CreateSchema, db: Session) -> ResponseSchema:
-        crud = self.crud_class(db, ModelType)
+        crud = self.crud_class(db, self.model_class)
         data = item.model_dump()
         instance = crud.create(data)
         return self.response_schema.model_validate(instance)
     
     async def read_one(self, item_id: int, db: Session) -> ResponseSchema:
-        crud = self.crud_class(db, ModelType)
+        crud = self.crud_class(db, self.model_class)
         instance = crud.read_one(id=item_id)
         if not instance:
             raise HTTPException(
@@ -79,14 +81,14 @@ class BaseRouter(Generic[CrudModel, ModelType, CreateSchema, UpdateSchema, Respo
         return self.response_schema.model_validate(instance)
     
     async def read_all(self, skip: int, limit: int, db: Session) -> List[ResponseSchema]:
-        crud = self.crud_class(db, ModelType)
+        crud = self.crud_class(db, self.model_class)
         instances = crud.read_all()
         # Применяем пагинацию
         instances = instances[skip:skip + limit]
         return [self.response_schema.model_validate(instance) for instance in instances]
     
     async def update(self, item_id: int, item: UpdateSchema, db: Session) -> ResponseSchema:
-        crud = self.crud_class(db, ModelType)
+        crud = self.crud_class(db, self.model_class)
         data = item.model_dump(exclude_unset=True)
         instance = crud.update(item_id, data)
         if not instance:
@@ -97,7 +99,7 @@ class BaseRouter(Generic[CrudModel, ModelType, CreateSchema, UpdateSchema, Respo
         return self.response_schema.model_validate(instance)
     
     async def delete(self, item_id: int, db: Session):
-        crud = self.crud_class(db, ModelType)
+        crud = self.crud_class(db, self.model_class)
         success = crud.delete(item_id)
         if not success:
             raise HTTPException(
