@@ -1,27 +1,14 @@
 import requests
+import json
 
-# response = requests.post(
-#     'http://localhost:8001/api/v1/dishes/',
-#     json={
-#         "category": "Роллы",
-#         "name": "Ролл ФуФ",
-#         "pieces": 8,
-#         "weight_g": 178,
-#         "composition": [
-#             "тортилья",
-#             "куриное филе жареное",
-#             "сыр сливочный",
-#             "помидоры",
-#             "пекинская капуста",
-#             "соус гриль"
-#         ],
-#         "proteins_g": 11,
-#         "fats_g": 13,
-#         "carbs_g": 18,
-#         "calories_kcal": 233,
-#         "price_rub": 349
-#     }
-# )
+# json_file = open("app/menu.json")
+# data = json.load(json_file)
+# for i in data['items']:
+#     response = requests.post(
+#         'http://localhost:8001/api/v1/dishes/',
+#         json=i
+#     )
+#     print(response)
 
 # response = requests.get('http://localhost:8001/api/v1/dishes/search/by_name?category=Ролл')
 # response = requests.post('http://localhost:8001/api/v1/orders/',
@@ -31,10 +18,27 @@ import requests
 #     "food_id": "1"
 #     })
 
-response = requests.post('http://localhost:8001/api/v1/users/',
-    json={
-    "phone_number": "123",
-    })
-print(response.text)
+# response = requests.post('http://localhost:8001/api/v1/users/',
+#     json={
+#     "phone_number": "123",
+#     })
+# print(response.text)
 
+
+# def transform_nutrition_data(item):
+#     if 'nutrition_per_100g' in item:
+#         nutrition = item.pop('nutrition_per_100g')  # удаляем и получаем значение
+#         # Добавляем все поля из nutrition на верхний уровень
+#         item.update(nutrition)
+#     return item
  
+# inf = open("app/menu.json")
+# data = json.load(inf)
+
+# data['items'] = [transform_nutrition_data(item) for item in data['items']]
+
+# inf.close()
+# # Обратно в JSON
+# outf = open("app/menu2.json", "w")
+# new_json_str = json.dump(data, outf, ensure_ascii=False, indent=2)
+# outf.close()
