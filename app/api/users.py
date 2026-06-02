@@ -12,8 +12,12 @@ from app.api.baseRouter import BaseRouter
 # Создаем роутер для блюд
 class UsersRouter(BaseRouter[UserCrud, User, UserBase, UserUpdate, UserResponse]):
     def _setup_custom_routes(self):
-        pass
-
+        @self.router.get("/search", response_model=List[self.response_model])
+        async def search_by_phone(
+            phone: int, db: Session = Depends(get_db)):
+            crud = self.crud_class(db, self.model_class)
+            items = crud.read_filter(phone=phone)
+            return [self.response_schema.model_validate(item) for item in items]
 # Создаем экземпляр роутера
 Users_router_instance = UsersRouter(
     model_class=User,
