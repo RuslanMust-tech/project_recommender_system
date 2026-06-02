@@ -145,7 +145,7 @@ class ApiService {
 
     // Заказы
     async getOrders(phone) {
-        return this.request(`/orders/${phone}`);
+        return this.request(`/user/${phone}/orders`);
     }
 
     async createOrder(phone, order) {
@@ -153,6 +153,13 @@ class ApiService {
             method: 'POST',
             body: JSON.stringify({ phone, order })
         });
+    }
+
+    async getCartRecommendations(itemIds, phone = null) {
+        const params = new URLSearchParams();
+        itemIds.forEach(id => params.append('item_ids', id));
+        if (phone) params.set('phone', phone);
+        return this.request(`/recommendations/cart?${params.toString()}`);
     }
 
     // Соусы и приборы (если есть в БД)

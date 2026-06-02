@@ -35,4 +35,15 @@ async def root():
         content = f.read()
     return HTMLResponse(content=content)
 
+
+@app.get("/analytics", response_class=HTMLResponse)
+async def analytics_page():
+    analytics_path = Path("templates/analytics.html")
+    if not analytics_path.exists():
+        return HTMLResponse(content="<h1>analytics.html not found</h1>", status_code=404)
+
+    with open(analytics_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    return HTMLResponse(content=content)
+
 setup_admin(app)

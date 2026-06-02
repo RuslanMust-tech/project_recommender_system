@@ -191,6 +191,11 @@ class CartComponent {
                 <h3>Не забудьте добавки и соусы</h3>
                 <div class="sauces-list">${saucesHtml}</div>
             </div>
+
+            <div class="cart-section recommendations-section">
+                <h3>Рекомендуем к заказу</h3>
+                <div id="cart-recommendations" class="recommendations-list"></div>
+            </div>
             
             <div class="cart-footer">
                 <strong class="cart-total">${total} ₽</strong>
@@ -202,6 +207,8 @@ class CartComponent {
         if (checkoutBtn) {
             checkoutBtn.onclick = () => this.checkout();
         }
+
+        this.loadRecommendations(cart);
     }
 
     updateCartCount(cart) {
@@ -226,6 +233,128 @@ class CartComponent {
 
     async addSauce(sauceId) {
         await this.store.addSauce(sauceId);
+    }
+
+    async loadRecommendations(cart) {
+        const container = this.container?.querySelector('#cart-recommendations');
+        if (!container) return;
+
+        const itemIds = [...new Set(cart.map(item => item.id).filter(id => id != null))];
+        if (itemIds.length === 0) {
+            container.innerHTML = '<p class="muted">Добавьте товары в корзину, чтобы увидеть рекомендации.</p>';
+            return;
+        }
+
+        try {
+            const phone = this.store.state.currentUser?.phone || null;
+            const data = await window.api.getCartRecommendations(itemIds, phone);
+            this.renderRecommendations(container, data);
+        } catch (error) {
+            console.error('Failed to load recommendations:', error);
+            container.innerHTML = '<p class="muted">Рекомендации временно недоступны.</p>';
+        }
+    }
+
+    renderRecommendations(container, data) {
+
+        const renderCard = (item, badge) => `
+            <div class="recommendation-card">
+
+                <div class="recommendation-content">
+
+                    <div class="recommendation-top">
+
+                        <div class="recommendation-name">
+                            ${item.name}
+                        </div>
+
+                        <button
+                            class="recommendation-price-btn"
+                            onclick="window.cartComponent.addRecommendation(${item.id})"
+                        >
+                            + ${item.price_rub || 0} ₽
+                        </button>
+
+                    </div>
+
+                    <div class="recommendation-reason">
+                        ${item.reason || ''}
+                    </div>
+
+                    <div class="recommendation-tag">
+                        ${badge}
+                    </div>
+
+                </div>
+
+            </div>
+        `;
+
+        const personal = (data.personal_repeats || [])
+            .slice(0, 3)
+            .map(item => renderCard(item, '⭐ Вы уже брали'))
+            .join('');
+
+        const association = (data.frequently_bought_together || [])
+            .slice(0, 3)
+            .map(item => renderCard(item, '🔥 Часто добавляют'))
+            .join('');
+
+        const addons = (data.category_addons || [])
+            .slice(0, 3)
+            .map(item => renderCard(item, '➕ Подходит к заказу'))
+            .join('');
+
+        const combos = (data.combos || [])
+            .slice(0, 2)
+            .map(combo => `
+                <div class="recommendation-combo-card">
+                    <div class="recommendation-combo-title">
+                        🍱 ${combo.title}
+                    </div>
+
+                    <div class="recommendation-combo-items">
+                        ${combo.items.map(i => i.name).join(' + ')}
+                    </div>
+
+                    <div class="recommendation-combo-reason">
+                        ${combo.reason}
+                    </div>
+                </div>
+            `)
+            .join('');
+
+        container.innerHTML = `
+            ${association ? `
+            <div class="recommendation-section">
+                <h4>🔥 Часто добавляют к такому заказу</h4>
+                ${association}
+            </div>
+            ` : ''}
+
+            ${personal ? `
+            <div class="recommendation-section">
+                <h4>⭐ Вы уже заказывали</h4>
+                ${personal}
+            </div>
+            ` : ''}
+
+            ${addons ? `
+            <div class="recommendation-section">
+                <h4>➕ Может пригодиться</h4>
+                ${addons}
+            </div>
+            ` : ''}
+
+        `;
+
+    }
+
+    async addRecommendation(productId) {
+        const product = this.store.state.products.find(item => item.id === productId);
+        if (product) {
+            await this.store.addToCart(product);
+        }
     }
 
     async checkout() {
