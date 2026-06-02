@@ -40,6 +40,7 @@ class FoodItemResponse(FoodItemBase):
     pass
 
 class FoodItemSearch(BaseModel):
+    id: int = Field(None)
     category: Optional[str] = Field(None)
     name: Optional[str] = Field(None)
     

@@ -1,4 +1,4 @@
-// store.js - Управление состоянием
+// store.js
 class Store {
     constructor() {
         this.state = {
@@ -9,10 +9,14 @@ class Store {
             products: [],
             categories: [],
             utensils: [],
-            sauces: []
+            sauces: [],
+            isLoading: false
         };
         this.listeners = [];
+
+        // Загружаем начальные данные
         this.loadInitialData();
+        this.loadFromLocalStorage();
     }
 
     subscribe(listener) {
@@ -33,29 +37,38 @@ class Store {
     }
 
     async loadInitialData() {
+        this.setState({ isLoading: true });
+
         try {
             const [products, categories, utensils, sauces] = await Promise.all([
-                api.getProducts(),
-                api.getCategories(),
-                api.getUtensils(),
-                api.getSauces()
+                window.api.getProducts(),
+                window.api.getCategories(),
+                window.api.getUtensils(),
+                window.api.getSauces()
             ]);
 
             this.setState({
-                products,
-                categories,
-                utensils,
-                sauces
+                products: products || [],
+                categories: categories || [],
+                utensils: utensils || [],
+                sauces: sauces || [],
+                isLoading: false
+            });
+
+            console.log('Данные загружены:', {
+                products: products.length,
+                categories: categories.length
             });
         } catch (error) {
             console.error('Failed to load initial data:', error);
+            this.setState({ isLoading: false });
         }
     }
 
     async loadUser(phone) {
         try {
-            const user = await api.getUser(phone);
-            const cartData = await api.getCart(phone);
+            const user = await window.api.getUser(phone);
+            const cartData = await window.api.getCart(phone);
 
             this.setState({
                 currentUser: user,
@@ -69,6 +82,7 @@ class Store {
     }
 
     async addToCart(product, quantity = 1) {
+        alert('Передан id: ' + product.id);
         const existingItem = this.state.cart.find(item => item.id === product.id);
 
         let newCart;
@@ -89,7 +103,7 @@ class Store {
         this.setState({ cart: newCart });
 
         if (this.state.currentUser) {
-            await api.saveCart(this.state.currentUser.phone, newCart);
+            await window.api.saveCart(this.state.currentUser.phone, newCart);
         }
     }
 
@@ -107,7 +121,7 @@ class Store {
         this.setState({ cart: newCart });
 
         if (this.state.currentUser) {
-            await api.saveCart(this.state.currentUser.phone, newCart);
+            await window.api.saveCart(this.state.currentUser.phone, newCart);
         }
     }
 
@@ -116,32 +130,35 @@ class Store {
         this.setState({ cart: newCart });
 
         if (this.state.currentUser) {
-            await api.saveCart(this.state.currentUser.phone, newCart);
+            await window.api.saveCart(this.state.currentUser.phone, newCart);
         }
     }
 
-    async addUtensil(utensil) {
-        if (!this.state.selectedUtensils.includes(utensil.id)) {
+    async addUtensil(utensilId) {
+        if (!this.state.selectedUtensils.includes(utensilId)) {
             this.setState({
-                selectedUtensils: [...this.state.selectedUtensils, utensil.id]
+                selectedUtensils: [...this.state.selectedUtensils, utensilId]
             });
         }
     }
 
-    async addSauce(sauce) {
-        if (!this.state.selectedSauces.includes(sauce.id)) {
+    async addSauce(sauceId) {
+        if (!this.state.selectedSauces.includes(sauceId)) {
             this.setState({
-                selectedSauces: [...this.state.selectedSauces, sauce.id]
+                selectedSauces: [...this.state.selectedSauces, sauceId]
             });
-            // Добавляем соус в корзину как товар
-            await this.addToCart({
-                id: sauce.id,
-                name: sauce.name,
-                price: sauce.price,
-                img: sauce.image,
-                weight: '',
-                type: 'sauce'
-            }, 1);
+
+            const sauce = this.state.sauces.find(s => s.id === sauceId);
+            if (sauce) {
+                await this.addToCart({
+                    id: sauce.id,
+                    name: sauce.name,
+                    price: sauce.price,
+                    img: sauce.image,
+                    weight: '',
+                    type: 'sauce'
+                }, 1);
+            }
         }
     }
 
@@ -154,7 +171,7 @@ class Store {
         const order = {
             id: Date.now(),
             date: new Date().toLocaleString('ru-RU'),
-            total,
+            total: total,
             payment: 'Оплата через СБП',
             address: address || 'г. Уфа, ул. Степана Кувыкина, 27',
             items: this.state.cart.map(item => ({
@@ -167,9 +184,8 @@ class Store {
             sauces: this.state.selectedSauces
         };
 
-        await api.createOrder(this.state.currentUser.phone, order);
+        await window.api.createOrder(this.state.currentUser.phone, order);
 
-        // Очищаем корзину
         this.setState({
             cart: [],
             selectedUtensils: [],
@@ -177,6 +193,14 @@ class Store {
         });
 
         return order;
+    }
+
+    getCartTotal() {
+        return this.state.cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    }
+
+    getCartItemsCount() {
+        return this.state.cart.reduce((sum, item) => sum + item.quantity, 0);
     }
 
     saveToLocalStorage() {
@@ -201,4 +225,4 @@ class Store {
     }
 }
 
-const store = new Store();
+window.store = new Store();

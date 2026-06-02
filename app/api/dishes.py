@@ -21,9 +21,9 @@ class DishesRouter(BaseRouter[FoodItemCrud, FoodItem, FoodItemBase, FoodItemUpda
         
         @self.router.get("/search/by_category", response_model=List[self.response_model])
         async def get_by_category(
-            category_id: int, db: Session = Depends(get_db)):
+            category: int, db: Session = Depends(get_db)):
             crud = self.crud_class(db, self.model_class)
-            items = crud.read_filter(category_id=category_id)
+            items = crud.read_filter(category=category)
             return [self.response_schema.model_validate(item) for item in items]
 
 # Создаем экземпляр роутера

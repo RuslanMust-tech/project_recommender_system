@@ -1,29 +1,7 @@
-// components.js - UI компоненты
-class Component {
-    constructor(container) {
-        this.container = container;
-    }
-
-    render() {
-        // To be overridden
-    }
-
-    show() {
-        if (this.container) {
-            this.container.style.display = 'block';
-        }
-    }
-
-    hide() {
-        if (this.container) {
-            this.container.style.display = 'none';
-        }
-    }
-}
-
-class ProductsGrid extends Component {
+// components.js
+class ProductsGrid {
     constructor(container, store) {
-        super(container);
+        this.container = container;
         this.store = store;
         this.currentCategory = null;
         this.init();
@@ -31,7 +9,9 @@ class ProductsGrid extends Component {
 
     init() {
         this.store.subscribe((state) => {
-            this.renderProducts(state.products);
+            if (state.products && state.products.length > 0) {
+                this.renderProducts(state.products);
+            }
         });
     }
 
@@ -43,9 +23,17 @@ class ProductsGrid extends Component {
             filteredProducts = products.filter(p => p.category === this.currentCategory);
         }
 
+        if (filteredProducts.length === 0) {
+            this.container.innerHTML = '<div class="no-products">Нет товаров в этой категории</div>';
+            return;
+        }
+
         this.container.innerHTML = filteredProducts.map(product => `
             <div class="product" data-category="${product.category}" data-product-id="${product.id}">
-                <img src="${product.image}" alt="${product.name}" loading="lazy">
+                <img src="${product.image}" 
+                     alt="${product.name}" 
+                     loading="lazy" 
+                     onerror="this.src='/static/img/placeholder.jpg'">
                 <div class="labels">
                     ${product.labels.map(label => `
                         <span class="label ${label.type}">${label.text}</span>
@@ -53,9 +41,10 @@ class ProductsGrid extends Component {
                 </div>
                 <strong>${product.name}</strong>
                 <p>${product.weight}</p>
+                ${product.calories ? `<p class="calories">${product.calories} ккал</p>` : ''}
                 <div class="product-price">${product.price} ₽</div>
                 <button onclick="window.productsGrid.addToCart(${product.id})">
-                    От ${product.price} ₽ →
+                    В корзину ${product.price} ₽ →
                 </button>
             </div>
         `).join('');
@@ -75,7 +64,6 @@ class ProductsGrid extends Component {
     }
 
     showNotification(message) {
-        // Можно добавить toast-уведомление
         const toast = document.createElement('div');
         toast.className = 'toast-notification';
         toast.textContent = message;
@@ -84,9 +72,9 @@ class ProductsGrid extends Component {
     }
 }
 
-class CategoriesFilter extends Component {
+class CategoriesFilter {
     constructor(container, store, onCategorySelect) {
-        super(container);
+        this.container = container;
         this.store = store;
         this.onCategorySelect = onCategorySelect;
         this.init();
@@ -94,7 +82,9 @@ class CategoriesFilter extends Component {
 
     init() {
         this.store.subscribe((state) => {
-            this.renderCategories(state.categories);
+            if (state.categories && state.categories.length > 0) {
+                this.renderCategories(state.categories);
+            }
         });
     }
 
@@ -104,17 +94,15 @@ class CategoriesFilter extends Component {
         this.container.innerHTML = categories.map(category => `
             <div class="category" data-cat="${category.name}">
                 ${category.name}
-                ${category.count ? `<span class="category-count">(${category.count})</span>` : ''}
+                <span class="category-count">(${category.count})</span>
             </div>
         `).join('');
 
-        // Добавляем обработчики
         this.container.querySelectorAll('.category').forEach(el => {
             el.addEventListener('click', () => {
                 const category = el.dataset.cat;
                 this.onCategorySelect(category);
 
-                // Активный класс
                 this.container.querySelectorAll('.category').forEach(c => c.classList.remove('active'));
                 el.classList.add('active');
             });
@@ -122,9 +110,9 @@ class CategoriesFilter extends Component {
     }
 }
 
-class CartComponent extends Component {
+class CartComponent {
     constructor(container, store) {
-        super(container);
+        this.container = container;
         this.store = store;
         this.init();
     }
@@ -140,17 +128,16 @@ class CartComponent extends Component {
         if (!this.container) return;
 
         const { cart, selectedUtensils, selectedSauces, utensils, sauces } = state;
-        const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+        const total = this.store.getCartTotal();
 
-        // Рендерим товары
         const cartItemsHtml = cart.length === 0
-            ? '<li>Корзина пуста</li>'
-            : cart.map((item, index) => `
+            ? '<li class="empty-cart">Корзина пуста</li>'
+            : cart.map(item => `
                 <li class="cart-item" data-item-id="${item.id}">
-                    ${item.img ? `<img src="${item.img}" alt="${item.name}" class="cart-img">` : ''}
+                    ${item.img ? `<img src="${item.img}" alt="${item.name}" class="cart-img" onerror="this.src='/static/img/placeholder.jpg'">` : ''}
                     <div class="cart-item-info">
                         <span class="cart-item-name">${item.name}</span>
-                        <span class="cart-item-weight">${item.weight}</span>
+                        <span class="cart-item-weight">${item.weight || ''}</span>
                         <span class="cart-item-price">${item.price} ₽</span>
                     </div>
                     <div class="qty-controls">
@@ -162,10 +149,9 @@ class CartComponent extends Component {
                 </li>
             `).join('');
 
-        // Рендерим приборы
-        const utensilsHtml = utensils.map(utensil => `
+        const utensilsHtml = (utensils || []).map(utensil => `
             <div class="utensil-item" data-utensil-id="${utensil.id}">
-                <img src="${utensil.image}" alt="${utensil.name}">
+                <img src="${utensil.image}" alt="${utensil.name}" onerror="this.src='/static/img/placeholder.jpg'">
                 <div class="utensil-info">
                     <span>${utensil.name}</span>
                     <strong class="utensil-price">${utensil.price} ₽</strong>
@@ -177,10 +163,9 @@ class CartComponent extends Component {
             </div>
         `).join('');
 
-        // Рендерим соусы
-        const saucesHtml = sauces.map(sauce => `
+        const saucesHtml = (sauces || []).map(sauce => `
             <div class="sauce-item" data-sauce-id="${sauce.id}">
-                <img src="${sauce.image}" alt="${sauce.name}">
+                <img src="${sauce.image}" alt="${sauce.name}" onerror="this.src='/static/img/placeholder.jpg'">
                 <div class="sauce-info">
                     <strong>${sauce.price} ₽</strong>
                     <span>${sauce.name}</span>
@@ -194,7 +179,7 @@ class CartComponent extends Component {
 
         this.container.innerHTML = `
             <h2>Корзина</h2>
-            <ul id="cart-items" class="cart-items">${cartItemsHtml}</ul>
+            <ul class="cart-items">${cartItemsHtml}</ul>
             
             <div class="cart-section utensils-section">
                 <h3>Приборы</h3>
@@ -208,12 +193,11 @@ class CartComponent extends Component {
             </div>
             
             <div class="cart-footer">
-                <strong>${total} ₽</strong>
-                <button id="checkoutBtn">Оформить заказ</button>
+                <strong class="cart-total">${total} ₽</strong>
+                <button id="checkoutBtn" class="checkout-btn">Оформить заказ</button>
             </div>
         `;
 
-        // Добавляем обработчик оформления заказа
         const checkoutBtn = this.container.querySelector('#checkoutBtn');
         if (checkoutBtn) {
             checkoutBtn.onclick = () => this.checkout();
@@ -221,7 +205,7 @@ class CartComponent extends Component {
     }
 
     updateCartCount(cart) {
-        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        const totalItems = this.store.getCartItemsCount();
         const cartCountEl = document.getElementById('cart-count');
         if (cartCountEl) {
             cartCountEl.textContent = totalItems;
@@ -237,19 +221,11 @@ class CartComponent extends Component {
     }
 
     async addUtensil(utensilId) {
-        const utensil = this.store.state.utensils.find(u => u.id === utensilId);
-        if (utensil) {
-            await this.store.addUtensil(utensil);
-            this.renderCart(this.store.state);
-        }
+        await this.store.addUtensil(utensilId);
     }
 
     async addSauce(sauceId) {
-        const sauce = this.store.state.sauces.find(s => s.id === sauceId);
-        if (sauce) {
-            await this.store.addSauce(sauce);
-            this.renderCart(this.store.state);
-        }
+        await this.store.addSauce(sauceId);
     }
 
     async checkout() {
@@ -266,7 +242,6 @@ class CartComponent extends Component {
         try {
             const order = await this.store.createOrder();
             alert(`Ваш заказ оформлен!\nНомер заказа: ${order.id}\nСумма: ${order.total} ₽`);
-            // Закрываем модалку корзины
             const cartModal = document.getElementById('cartModal');
             if (cartModal) cartModal.style.display = 'none';
         } catch (error) {
@@ -275,16 +250,17 @@ class CartComponent extends Component {
     }
 }
 
-class UserPanel extends Component {
+class UserPanel {
     constructor(container, store) {
-        super(container);
+        this.container = container;
         this.store = store;
+        this.orders = [];
         this.init();
     }
 
     init() {
         this.store.subscribe((state) => {
-            if (this.container.style.display === 'flex') {
+            if (this.container && this.container.style.display === 'flex') {
                 this.renderUserPanel(state);
             }
         });
@@ -298,16 +274,17 @@ class UserPanel extends Component {
 
         await this.loadOrders();
         this.renderUserPanel(this.store.state);
-        this.container.style.display = 'flex';
+        if (this.container) {
+            this.container.style.display = 'flex';
+        }
     }
 
     async loadOrders() {
         if (!this.store.state.currentUser) return;
 
         try {
-            const data = await api.getOrders(this.store.state.currentUser.phone);
+            const data = await window.api.getOrders(this.store.state.currentUser.phone);
             this.orders = data.orders || [];
-            this.renderUserPanel(this.store.state);
         } catch (error) {
             console.error('Failed to load orders:', error);
             this.orders = [];
@@ -320,15 +297,15 @@ class UserPanel extends Component {
         const user = state.currentUser;
         if (!user) return;
 
-        const ordersHtml = (this.orders || []).map(order => `
+        const ordersHtml = this.orders.map(order => `
             <div class="order-card">
                 <div>
                     <div class="order-number">#${order.id}</div>
-                    <div class="order-date">Время готовности<br>${order.date}</div>
+                    <div class="order-date">${order.date}</div>
                     <div class="order-status">${order.status || 'Завершен'}</div>
                 </div>
                 <div>
-                    <div class="order-address-title">Адрес кафе</div>
+                    <div class="order-address-title">Адрес доставки</div>
                     <div class="order-address">${order.address}</div>
                 </div>
                 <div>
@@ -342,28 +319,34 @@ class UserPanel extends Component {
             <div class="modal-content user-panel-modal">
                 <span class="close" id="closeUserPanel">&times;</span>
                 <div class="user-header">
-                    <h2>Привет, <span id="userName">${user.name || 'Пользователь'}</span></h2>
-                    <p>Телефон: <span id="userPhone">${user.phone}</span></p>
+                    <h2>Привет, ${user.name || 'Пользователь'}</h2>
+                    <p>Телефон: ${user.phone}</p>
                 </div>
                 <div class="user-info-card">
                     <div class="user-info-item">
                         <span class="info-label">Номер пользователя</span>
-                        <strong id="userId">#${String(user.id || 1).padStart(4, '0')}</strong>
+                        <strong>#${String(user.id || 1).padStart(4, '0')}</strong>
                     </div>
                 </div>
                 <div class="orders-title">
-                    <h3>История заказов</h3>
+                    <h3>История заказов (${this.orders.length})</h3>
                 </div>
-                <div id="orderHistory" class="order-history">
+                <div class="order-history">
                     ${ordersHtml || '<p>У вас пока нет заказов</p>'}
                 </div>
             </div>
         `;
 
-        // Добавляем обработчик закрытия
         const closeBtn = this.container.querySelector('#closeUserPanel');
         if (closeBtn) {
-            closeBtn.onclick = () => this.container.style.display = 'none';
+            closeBtn.onclick = () => {
+                if (this.container) this.container.style.display = 'none';
+            };
         }
     }
 }
+
+window.ProductsGrid = ProductsGrid;
+window.CategoriesFilter = CategoriesFilter;
+window.CartComponent = CartComponent;
+window.UserPanel = UserPanel;

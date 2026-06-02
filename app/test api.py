@@ -1,14 +1,14 @@
 import requests
 import json
 
-# json_file = open("app/menu.json")
-# data = json.load(json_file)
-# for i in data['items']:
-#     response = requests.post(
-#         'http://localhost:8001/api/v1/dishes/',
-#         json=i
-#     )
-#     print(response)
+json_file = open("app/menu.json", 'r', encoding='utf-8')
+data = json.load(json_file)
+for i in data['items']:
+    response = requests.post(
+        'http://localhost:8001/api/v1/dishes/',
+        json=i
+    )
+    print(response)
 
 # response = requests.get('http://localhost:8001/api/v1/dishes/search/by_name?category=Ролл')
 # response = requests.post('http://localhost:8001/api/v1/orders/',
