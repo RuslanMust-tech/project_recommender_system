@@ -128,7 +128,7 @@ class ApiService {
 
     // Пользователи
     async getUser(phone) {
-        return this.request(`/user/${phone}`);
+        return this.request(`/users/?phone_number=${phone}`);
     }
 
     // Корзина
@@ -149,7 +149,7 @@ class ApiService {
     }
 
     async createOrder(phone, order) {
-        return this.request('/order', {
+        return this.request('/orders', {
             method: 'POST',
             body: JSON.stringify({ phone, order })
         });

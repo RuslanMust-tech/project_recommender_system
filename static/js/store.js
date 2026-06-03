@@ -173,19 +173,14 @@ class Store {
 
         const total = this.state.cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
         const order = {
-            id: Date.now(),
-            date: new Date().toLocaleString('ru-RU'),
+            user_id: this.state.user,
             total: total,
-            payment: 'Оплата через СБП',
-            address: address || 'г. Уфа, ул. Степана Кувыкина, 27',
             items: this.state.cart.map(item => ({
                 id: item.id,
                 name: item.name,
                 quantity: item.quantity,
                 price: item.price
             })),
-            utensils: this.state.selectedUtensils,
-            sauces: this.state.selectedSauces
         };
 
         await window.api.createOrder(this.state.currentUser.phone, order);

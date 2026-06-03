@@ -37,10 +37,10 @@ class FoodItemUpdate(FoodItemBase):
     price_rub: Optional[int] = Field(None, gt=0)
 
 class FoodItemResponse(FoodItemBase):
-    id: int
+    id: int = Field(None)
+    pass
 
 class FoodItemSearch(BaseModel):
-    id: int = Field(None)
     category: Optional[str] = Field(None)
     name: Optional[str] = Field(None)
     
