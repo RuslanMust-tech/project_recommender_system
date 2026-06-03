@@ -82,6 +82,11 @@ class Store {
     }
 
     async addToCart(product, quantity = 1) {
+        if (!product || product.id == null) {
+            console.error('Cannot add product without id:', product);
+            return;
+        }
+
         const existingItem = this.state.cart.find(item => item.id === product.id);
 
         let newCart;

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FARFOR Analytics</title>
+  <link rel="stylesheet" href="/static/analytics.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div>
+      <h1>FARFOR Analytics</h1>
+      <p>Рекомендации, ассоциативные правила и история покупок</p>
+    </div>
+    <a href="/" class="home-link">Меню</a>
+  </header>
+
+  <main>
+    <section class="metrics" id="metrics"></section>
+
+    <section class="toolbar">
+      <label>
+        Телефон пользователя
+        <input id="phoneInput" type="tel" placeholder="79990001122">
+      </label>
+      <label>
+        Блюдо
+        <input id="dishInput" type="search" placeholder="Название блюда">
+      </label>
+      <select id="dishSelect"></select>
+      <button id="loadUserBtn">Пользователь</button>
+      <button id="loadDishBtn">Блюдо</button>
+      <button id="reloadBtn">Обновить</button>
+    </section>
+
+    <section class="grid">
+      <article class="panel wide">
+        <div class="panel-head">
+          <h2>Продажи по категориям</h2>
+          <span>количество строк Order</span>
+        </div>
+        <canvas id="categoryChart" height="260"></canvas>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Размер заказов</h2>
+          <span>товаров в заказе</span>
+        </div>
+        <canvas id="sizeChart" height="260"></canvas>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Топ блюд</h2>
+          <span>самые частые позиции</span>
+        </div>
+        <div id="topDishes" class="list"></div>
+      </article>
+
+      <article class="panel wide">
+        <div class="panel-head">
+          <h2>Ассоциативные правила</h2>
+          <span>lift, confidence, support</span>
+        </div>
+        <div id="rulesTable" class="table"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Пользователь</h2>
+          <span>повторы и чеки</span>
+        </div>
+        <div id="userPanel" class="list muted">Введите телефон и нажмите «Пользователь».</div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-head">
+          <h2>Блюдо</h2>
+          <span>часто вместе</span>
+        </div>
+        <div id="dishPanel" class="list muted">Найдите блюдо и нажмите «Блюдо».</div>
+      </article>
+    </section>
+  </main>
+
+  <script src="/static/js/analytics.js"></script>
+</body>
+
+</html>
