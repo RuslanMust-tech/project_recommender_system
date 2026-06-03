@@ -14,7 +14,7 @@ class UsersRouter(BaseRouter[UserCrud, User, UserBase, UserUpdate, UserResponse]
     def _setup_custom_routes(self):
         @self.router.get("/search", response_model=List[self.response_model])
         async def search_by_phone(
-            phone_number: str, db: Session = Depends(get_db), request: Request = None):
+            phone_number: int, db: Session = Depends(get_db), request: Request = None):
             print(f"пизда")
             crud = self.crud_class(db, self.model_class)
             items = crud.read_filter(phone_number=phone_number)

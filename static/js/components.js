@@ -180,17 +180,6 @@ class CartComponent {
         this.container.innerHTML = `
             <h2>Корзина</h2>
             <ul class="cart-items">${cartItemsHtml}</ul>
-            
-            <div class="cart-section utensils-section">
-                <h3>Приборы</h3>
-                <div class="utensils-list">${utensilsHtml}</div>
-                <p class="eco-note">Спасибо, что заботитесь об экологии и не заказываете приборы!</p>
-            </div>
-            
-            <div class="cart-section sauces-section">
-                <h3>Не забудьте добавки и соусы</h3>
-                <div class="sauces-list">${saucesHtml}</div>
-            </div>
 
             <div class="cart-section recommendations-section">
                 <h3>Рекомендуем к заказу</h3>
