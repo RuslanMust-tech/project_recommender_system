@@ -1,5 +1,5 @@
 # реализация эндпоинтов для блюд 
-from fastapi import Depends
+from fastapi import Depends, Request
 from typing import List
 from sqlalchemy.orm import Session
 from app.db.session import get_db
@@ -14,9 +14,10 @@ class UsersRouter(BaseRouter[UserCrud, User, UserBase, UserUpdate, UserResponse]
     def _setup_custom_routes(self):
         @self.router.get("/search", response_model=List[self.response_model])
         async def search_by_phone(
-            phone: int, db: Session = Depends(get_db)):
+            phone_number: str, db: Session = Depends(get_db), request: Request = None):
+            print(f"пизда")
             crud = self.crud_class(db, self.model_class)
-            items = crud.read_filter(phone=phone)
+            items = crud.read_filter(phone_number=phone_number)
             return [self.response_schema.model_validate(item) for item in items]
 # Создаем экземпляр роутера
 Users_router_instance = UsersRouter(

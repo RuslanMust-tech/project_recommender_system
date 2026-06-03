@@ -128,7 +128,7 @@ class ApiService {
 
     // Пользователи
     async getUser(phone) {
-        return this.request(`/users/?phone_number=${phone}`);
+        return this.request(`/user/${phone}`);
     }
 
     // Корзина
