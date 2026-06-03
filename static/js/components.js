@@ -185,6 +185,8 @@ class CartComponent {
                 <h3>Рекомендуем к заказу</h3>
                 <div id="cart-recommendations" class="recommendations-list"></div>
             </div>
+
+            <div id="ml-recommendations-container" class="cart-section"></div>
             
             <div class="cart-footer">
                 <strong class="cart-total">${total} ₽</strong>
@@ -198,6 +200,15 @@ class CartComponent {
         }
 
         this.loadRecommendations(cart);
+        this.loadMLRecommendations(cart);
+    }
+
+    async loadMLRecommendations(cart) {
+        const container = document.getElementById('ml-recommendations-container');
+        if (!container || cart.length === 0) return;
+
+        const mlComponent = new window.MLRecommendationComponent(container, this.store);
+        await mlComponent.loadAndRender(cart);
     }
 
     updateCartCount(cart) {
@@ -339,10 +350,19 @@ class CartComponent {
 
     }
 
-    async addRecommendation(productId) {
-        const product = this.store.state.products.find(item => item.id === productId);
+    async addRecommendation(productId, productName) {
+        // Сначала ищем по ID
+        let product = this.store.state.products.find(item => item.id === productId);
+        
+        // Если не найден по ID, ищем по имени
+        if (!product && productName) {
+            product = this.store.state.products.find(item => item.name === productName);
+        }
+        
         if (product) {
             await this.store.addToCart(product);
+        } else {
+            console.warn(`Product not found: ID=${productId}, Name=${productName}`);
         }
     }
 
@@ -365,6 +385,72 @@ class CartComponent {
         } catch (error) {
             alert('Ошибка при оформлении заказа: ' + error.message);
         }
+    }
+}
+
+class MLRecommendationComponent {
+    constructor(container, store) {
+        this.container = container;
+        this.store = store;
+    }
+
+    async loadAndRender(cartItems) {
+        if (!this.container) return;
+
+        // Extract product names from cart items
+        const cartNames = cartItems.map(item => item.name).filter(Boolean);
+        if (cartNames.length === 0) {
+            this.container.innerHTML = '';
+            return;
+        }
+
+        try {
+            const phone = this.store.state.currentUser?.phone || null;
+
+            const response = await window.api.getMLRecommendations(cartNames, phone);
+            
+            if (!response || !response.recommendations || response.recommendations.length === 0) {
+                this.container.innerHTML = '';
+                return;
+            }
+
+            this.render(response);
+        } catch (error) {
+            console.error('ML recommendations error:', error);
+            this.container.innerHTML = '';
+        }
+    }
+
+    render(data) {
+        const recs = data.recommendations || [];
+        if (recs.length === 0) {
+            this.container.innerHTML = '';
+            return;
+        }
+
+        const cardsHtml = recs.map(rec => {
+            const confidence = (rec.confidence * 100).toFixed(0);
+            return `
+                <div class="ml-recommendation-card">
+                    <div class="ml-rec-badge">🤖 AI ${confidence}%</div>
+                    <div class="ml-rec-name">${rec.name}</div>
+                    <div class="ml-rec-category">${rec.category}</div>
+                    <button class="ml-rec-btn" onclick="window.cartComponent.addRecommendation(${rec.id}, '${rec.name.replace(/'/g, "\\'")}')">
+                        + ${rec.price_rub} ₽
+                    </button>
+                </div>
+            `;
+        }).join('');
+
+        this.container.innerHTML = `
+            <div class="ml-recommendations-section">
+                <h4>🤖 Рекомендации ИИ</h4>
+                <div class="ml-recommendations-grid">
+                    ${cardsHtml}
+                </div>
+                <div class="ml-source-info">${data.source}</div>
+            </div>
+        `;
     }
 }
 
@@ -467,4 +553,5 @@ class UserPanel {
 window.ProductsGrid = ProductsGrid;
 window.CategoriesFilter = CategoriesFilter;
 window.CartComponent = CartComponent;
+window.MLRecommendationComponent = MLRecommendationComponent;
 window.UserPanel = UserPanel;

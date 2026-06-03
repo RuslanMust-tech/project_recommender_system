@@ -2,12 +2,37 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
+import logging
 
 from app.api.api_v1 import api_router
 from app.core.config import get_settings
 from app.db.admin import setup_admin
 
+logger = logging.getLogger(__name__)
+
 settings = get_settings()
+
+# Создаем директории для статических файлов, если их нет
+static_dir = Path("static")
+static_dir.mkdir(exist_ok=True)
+
+app = FastAPI(title=settings.app_name, version="0.1")
+
+# Подключаем API роутеры
+app.include_router(api_router, prefix="/api/v1")
+
+
+@app.on_event("startup")
+async def startup_event():
+    """Initialize ML service on startup if enabled."""
+    if settings.ml_enabled:
+        try:
+            from app.ml.ml_service import MLRecommendationServiceFactory
+            MLRecommendationServiceFactory.get_service(settings.ml_model_dir)
+            logger.info("ML service initialized on startup")
+        except Exception as e:
+            logger.warning(f"ML service initialization failed (non-critical): {e}")
+
 
 # Создаем директории для статических файлов, если их нет
 static_dir = Path("static")

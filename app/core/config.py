@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     app_name: str = "farfor-recommend"
     database_url: str = "sqlite:///./farfor.db"
     environment: str = "development"
+    ml_model_dir: str = "app/ml/rag_order_model_custom"
+    ml_enabled: bool = True
 
     model_config = ConfigDict(
         env_file=".env",

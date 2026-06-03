@@ -191,6 +191,26 @@ class ApiService {
             ];
         }
     }
+
+    async getMLRecommendations(cartItemNames, phone = null) {
+        if (!cartItemNames || cartItemNames.length === 0) {
+            return [];
+        }
+        
+        try {
+            return await this.request('/ml/recommendations/ml', {
+                method: 'POST',
+                body: JSON.stringify({
+                    phone: phone,
+                    current_cart: cartItemNames,
+                    limit: 10
+                })
+            });
+        } catch (error) {
+            console.warn('ML recommendations unavailable:', error);
+            return null;
+        }
+    }
 }
 
 // Создаем глобальный экземпляр
