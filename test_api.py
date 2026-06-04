@@ -24,8 +24,8 @@ import json
 #     })
 # print(response.text)
 
-response = requests.get('http://localhost:8001/api/v1/user/123')
-print(response)
+# response = requests.get('http://localhost:8001/api/v1/user/123')
+# print(response)
 
 
 # def transform_nutrition_data(item):

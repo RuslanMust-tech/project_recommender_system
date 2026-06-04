@@ -79,14 +79,16 @@ class MLRecommendationService:
             ml_recommendations, user_order_count = self._predict_ml(
                 db, phone, current_cart, limit
             )
-            if ml_recommendations:  # Only use ml_model source if we got results
-                source = "ml_model"
-        except ModelLoadError:
-            logger.warning("ML model not available, using fallback")
+            # Убираем проверку "if ml_recommendations" - они уже есть
+            source = "ml_model"  # Всегда ставим ml_model, если дошли сюда без ошибок
         except PredictionError as e:
             logger.warning(f"ML prediction failed: {e}, using fallback")
+            ml_recommendations = []
+            user_order_count = None
         except Exception as e:
-            logger.error(f"Unexpected error in ML prediction: {e}")
+            logger.error(f"Unexpected error: {e}")
+            ml_recommendations = []
+            user_order_count = None
         
         # If ML didn't return enough recommendations, supplement with association rules
         if len(ml_recommendations) < limit:
@@ -119,6 +121,7 @@ class MLRecommendationService:
         """Execute ML prediction. Raises PredictionError on failure."""
         from app.ml.query_builder import QueryBuilder
         
+        
         user = self._get_user(db, phone)
         food_map = self._get_food_map(db)
         
@@ -144,9 +147,21 @@ class MLRecommendationService:
         except Exception as e:
             raise PredictionError(f"Model prediction failed: {str(e)}")
         
-        # Map predictions to dishes and assign confidence
+        predicted_names = self._predictor.predict(query_dict)
+        print("=-" * 70)
+        print(f"ML PREDICTED: {predicted_names}")
+        print(f"Current cart: {current_cart}")
+        print("=-" * 70)
+
+        # Map predictions to dishes
         recommendations = []
         for i, dish_name in enumerate(predicted_names[:limit]):
+            food = self._find_food_by_name(food_map, dish_name)
+            if food:
+                print(f"✓ Found: {dish_name} -> {food.name}")
+                # ... добавление
+            else:
+                print(f"✗ NOT FOUND: {dish_name}")
             food = self._find_food_by_name(food_map, dish_name)
             if food:
                 confidence = 1.0 / (i + 1)  # Higher confidence for first predictions
@@ -279,10 +294,40 @@ class MLRecommendationService:
     
     @staticmethod
     def _find_food_by_name(food_map: dict, name: str) -> Optional[FoodItem]:
-        """Find food item by name in map."""
+        """Find food item by name with synonym mapping."""
+    
+        # Словарь синонимов (ML название -> реальное название в БД)
+        synonyms = {
+            'Бургер Биф пита': 'Биф пита',
+            'Бургер Биф пита': 'Биф-пита',
+            'Филадельфия том-ям': 'Филадельфия том-ям с соусом чимичурри',
+            # Добавьте другие синонимы по мере необходимости
+        }
+        
+        # Проверяем синоним
+        search_name = synonyms.get(name, name)
+        
+        name_lower = search_name.lower().strip()
+        
         for food in food_map.values():
-            if food.name.lower() == name.lower():
+            food_name_lower = food.name.lower()
+            
+            # Точное совпадение
+            if food_name_lower == name_lower:
                 return food
+            
+            # Частичное совпадение
+            if name_lower in food_name_lower or food_name_lower in name_lower:
+                return food
+        
+        # Если не нашли, пробуем оригинальное имя ML
+        if search_name != name:
+            name_lower = name.lower().strip()
+            for food in food_map.values():
+                food_name_lower = food.name.lower()
+                if name_lower in food_name_lower or food_name_lower in name_lower:
+                    return food
+        
         return None
 
 
