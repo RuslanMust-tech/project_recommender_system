@@ -353,12 +353,12 @@ class CartComponent {
     async addRecommendation(productId, productName) {
         // Сначала ищем по ID
         let product = this.store.state.products.find(item => item.id === productId);
-        
+
         // Если не найден по ID, ищем по имени
         if (!product && productName) {
             product = this.store.state.products.find(item => item.name === productName);
         }
-        
+
         if (product) {
             await this.store.addToCart(product);
         } else {
@@ -408,7 +408,7 @@ class MLRecommendationComponent {
             const phone = this.store.state.currentUser?.phone || null;
 
             const response = await window.api.getMLRecommendations(cartNames, phone);
-            
+
             if (!response || !response.recommendations || response.recommendations.length === 0) {
                 this.container.innerHTML = '';
                 return;
