@@ -351,19 +351,41 @@ class CartComponent {
     }
 
     async addRecommendation(productId, productName) {
-        // Сначала ищем по ID
-        let product = this.store.state.products.find(item => item.id === productId);
+        let product = null;
 
-        // Если не найден по ID, ищем по имени
+        // Сначала ищем по ID
+        if (productId && !isNaN(productId)) {
+            product = this.store.state.products.find(item => item.id === productId);
+        }
+
+        // Если не нашли по ID, ищем по имени
         if (!product && productName) {
             product = this.store.state.products.find(item => item.name === productName);
         }
 
+        // Если всё ещё не нашли, ищем по ID из строки (для ML рекомендаций)
+        if (!product && productId && typeof productId === 'string') {
+            const numId = parseInt(productId);
+            if (!isNaN(numId)) {
+                product = this.store.state.products.find(item => item.id === numId);
+            }
+        }
+
         if (product) {
             await this.store.addToCart(product);
+            this.showNotification(`${product.name} добавлен в корзину`);
         } else {
             console.warn(`Product not found: ID=${productId}, Name=${productName}`);
+            this.showNotification(`Не удалось добавить: ${productName || 'товар'}`, 'error');
         }
+    }
+
+    showNotification(message, type = 'success') {
+        const toast = document.createElement('div');
+        toast.className = `toast-notification ${type}`;
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2000);
     }
 
     async checkout() {

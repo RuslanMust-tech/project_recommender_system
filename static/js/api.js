@@ -180,7 +180,7 @@ class ApiService {
     async getSauces() {
         // Если есть таблица с соусами
         try {
-            return await this.request('/sauces');
+            return await this.getProducts("Добавки");
         } catch {
             // Возвращаем заглушку
             return [
@@ -196,7 +196,7 @@ class ApiService {
         if (!cartItemNames || cartItemNames.length === 0) {
             return [];
         }
-        
+
         try {
             return await this.request('/ml/recommendations/ml', {
                 method: 'POST',
