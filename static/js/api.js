@@ -148,11 +148,36 @@ class ApiService {
         return this.request(`/user/${phone}/orders`);
     }
 
-    async createOrder(phone, order) {
-        return this.request('/orders', {
-            method: 'POST',
-            body: JSON.stringify({ phone, order })
-        });
+    async createOrder(phone, cartItems) {
+        // Сначала получаем user_id
+        const user = await this.request(`/user/${phone}`);
+        const userId = user.id;
+
+        const orderId = Math.floor(Date.now() / 1000);
+
+        // Создаём массив запросов - по одному на каждый товар в корзине
+        const promises = [];
+
+        for (const item of cartItems) {
+            // Для каждого количества создаём отдельные запросы
+            for (let i = 0; i < item.quantity; i++) {
+                promises.push(
+                    this.request('/orders', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            order_id: orderId,
+                            user_id: userId,
+                            food_id: item.id
+                        })
+                    })
+                );
+            }
+        }
+
+        // Отправляем все запросы параллельно
+        const results = await Promise.all(promises);
+
+        return { success: true, order_id: orderId, items_created: results.length };
     }
 
     async getCartRecommendations(itemIds, phone = null) {

@@ -171,27 +171,20 @@ class Store {
             throw new Error('User not logged in');
         }
 
-        const total = this.state.cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-        const order = {
-            user_id: this.state.user,
-            total: total,
-            items: this.state.cart.map(item => ({
-                id: item.id,
-                name: item.name,
-                quantity: item.quantity,
-                price: item.price
-            })),
-        };
+        // Отправляем корзину напрямую
+        const result = await window.api.createOrder(
+            this.state.currentUser.phone,
+            this.state.cart  // передаём всю корзину
+        );
 
-        await window.api.createOrder(this.state.currentUser.phone, order);
-
+        // Очищаем корзину
         this.setState({
             cart: [],
             selectedUtensils: [],
             selectedSauces: []
         });
 
-        return order;
+        return result;
     }
 
     getCartTotal() {

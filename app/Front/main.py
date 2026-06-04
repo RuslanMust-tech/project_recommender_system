@@ -118,21 +118,21 @@ def get_orders(phone: str):
     return {"orders": user["orders"]}
 
 
-@app.post("/order")
-def create_order(data: OrderRequest):
-    if data.phone not in users_db:
-        users_db[data.phone] = {
-            "phone": data.phone,
-            "cart": [],
-            "orders": []
-        }
+# @app.post("/order")
+# def create_order(data: OrderRequest):
+#     if data.phone not in users_db:
+#         users_db[data.phone] = {
+#             "phone": data.phone,
+#             "cart": [],
+#             "orders": []
+#         }
 
-    users_db[data.phone]["orders"].append(
-        data.order.dict()
-    )
+#     users_db[data.phone]["orders"].append(
+#         data.order.dict()
+#     )
 
-    users_db[data.phone]["cart"] = []
+#     users_db[data.phone]["cart"] = []
 
-    return {
-        "message": "Заказ оформлен"
-    }
+#     return {
+#         "message": "Заказ оформлен"
+#     }

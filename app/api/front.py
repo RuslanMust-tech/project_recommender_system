@@ -174,25 +174,37 @@ def get_orders(phone: str, db: Session = Depends(get_db)):
         ]
     }
 
-
 @front.post("/order")
 def create_order(data: OrderRequest, db: Session = Depends(get_db)):
-    """Создать заказ в SQLite: одна строка Order на одну позицию товара."""
+    """Создать заказ: одна строка Order на одну позицию товара."""
     user = _get_or_create_user(db, data.phone)
     order_id = data.order.id or int(datetime.now().timestamp())
     created_rows = 0
 
     for item in data.order.items:
-        if not item.id or item.type in {"sauce", "utensil"}:
+        # Пропускаем соусы и приборы (если не нужно сохранять)
+        if item.type in {"sauce", "utensil"}:
             continue
-
-        food = db.get(FoodItem, item.id)
+            
+        # Ищем блюдо по ID или имени
+        food = None
+        if item.id:
+            food = db.get(FoodItem, item.id)
+        if not food and item.name:
+            food = db.query(FoodItem).filter(FoodItem.name == item.name).first()
+            
         if not food:
+            print(f"Food not found: {item}")
             continue
 
         quantity = max(item.quantity or 1, 1)
+        # Создаём отдельную запись для каждой единицы товара
         for _ in range(quantity):
-            db.add(DBOrder(order_id=order_id, user_id=user.id, food_id=food.id))
+            db.add(DBOrder(
+                order_id=order_id, 
+                user_id=user.id, 
+                food_id=food.id
+            ))
             created_rows += 1
 
     if created_rows == 0:
@@ -202,9 +214,42 @@ def create_order(data: OrderRequest, db: Session = Depends(get_db)):
         )
 
     db.commit()
+    
+    # Очищаем временную корзину
     carts_db[str(user.phone_number)] = []
 
-    return {"message": "Заказ оформлен", "order_id": order_id}
+    return {"message": "Заказ оформлен", "order_id": order_id, "items_created": created_rows}
+
+# @front.post("/order")
+# def create_order(data: OrderRequest, db: Session = Depends(get_db)):
+#     """Создать заказ в SQLite: одна строка Order на одну позицию товара."""
+#     user = _get_or_create_user(db, data.phone)
+#     order_id = data.order.id or int(datetime.now().timestamp())
+#     created_rows = 0
+
+#     for item in data.order.items:
+#         if not item.id or item.type in {"sauce", "utensil"}:
+#             continue
+
+#         food = db.get(FoodItem, item.id)
+#         if not food:
+#             continue
+
+#         quantity = max(item.quantity or 1, 1)
+#         for _ in range(quantity):
+#             db.add(DBOrder(order_id=order_id, user_id=user.id, food_id=food.id))
+#             created_rows += 1
+
+#     if created_rows == 0:
+#         raise HTTPException(
+#             status_code=400,
+#             detail="В заказе нет позиций, которые можно сохранить в БД",
+#         )
+
+#     db.commit()
+#     carts_db[str(user.phone_number)] = []
+
+#     return {"message": "Заказ оформлен", "order_id": order_id}
 
 
 @front.get("/order/{phone}/{order_id}")

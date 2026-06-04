@@ -373,10 +373,8 @@ class CartComponent {
 
         if (product) {
             await this.store.addToCart(product);
-            this.showNotification(`${product.name} добавлен в корзину`);
         } else {
             console.warn(`Product not found: ID=${productId}, Name=${productName}`);
-            this.showNotification(`Не удалось добавить: ${productName || 'товар'}`, 'error');
         }
     }
 
@@ -400,12 +398,10 @@ class CartComponent {
         }
 
         try {
-            const order = await this.store.createOrder();
-            alert(`Ваш заказ оформлен!\nНомер заказа: ${order.id}\nСумма: ${order.total} ₽`);
+            const result = await this.store.createOrder();
             const cartModal = document.getElementById('cartModal');
             if (cartModal) cartModal.style.display = 'none';
         } catch (error) {
-            alert('Ошибка при оформлении заказа: ' + error.message);
         }
     }
 }
