@@ -43,7 +43,7 @@ class BaseRouter(Generic[CrudModel, ModelType, CreateSchema, UpdateSchema, Respo
         # GET / - получение всех записей
         @self.router.get("/", response_model=List[self.response_model])
         async def read_all(
-            skip: int = Query(0, ge=0), limit: int = Query(100, ge=1, le=1000), db: Session = Depends(get_db)):
+            skip: int = Query(0, ge=0), limit: int = Query(1000, ge=1, le=10000), db: Session = Depends(get_db)):
             return await self.read_all(skip, limit, db)
         
         # PUT /{id} - обновление

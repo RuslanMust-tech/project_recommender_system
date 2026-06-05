@@ -145,14 +145,46 @@ class ApiService {
 
     // Заказы
     async getOrders(phone) {
-        return this.request(`/orders/${phone}`);
+        return this.request(`/user/${phone}/orders`);
     }
 
-    async createOrder(phone, order) {
-        return this.request('/order', {
-            method: 'POST',
-            body: JSON.stringify({ phone, order })
-        });
+    async createOrder(phone, cartItems) {
+        // Сначала получаем user_id
+        const user = await this.request(`/user/${phone}`);
+        const userId = user.id;
+
+        const orderId = Math.floor(Date.now() / 1000);
+
+        // Создаём массив запросов - по одному на каждый товар в корзине
+        const promises = [];
+
+        for (const item of cartItems) {
+            // Для каждого количества создаём отдельные запросы
+            for (let i = 0; i < item.quantity; i++) {
+                promises.push(
+                    this.request('/orders', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            order_id: orderId,
+                            user_id: userId,
+                            food_id: item.id
+                        })
+                    })
+                );
+            }
+        }
+
+        // Отправляем все запросы параллельно
+        const results = await Promise.all(promises);
+
+        return { success: true, order_id: orderId, items_created: results.length };
+    }
+
+    async getCartRecommendations(itemIds, phone = null) {
+        const params = new URLSearchParams();
+        itemIds.forEach(id => params.append('item_ids', id));
+        if (phone) params.set('phone', phone);
+        return this.request(`/recommendations/cart?${params.toString()}`);
     }
 
     // Соусы и приборы (если есть в БД)
@@ -173,7 +205,7 @@ class ApiService {
     async getSauces() {
         // Если есть таблица с соусами
         try {
-            return await this.request('/sauces');
+            return await this.getProducts("Добавки");
         } catch {
             // Возвращаем заглушку
             return [
@@ -182,6 +214,26 @@ class ApiService {
                 { id: 3, name: "Имбирь", price: 0, image: "/static/img/ginger.png" },
                 { id: 4, name: "Майонезный соус", price: 0, image: "/static/img/mayo.png" }
             ];
+        }
+    }
+
+    async getMLRecommendations(cartItemNames, phone = null) {
+        if (!cartItemNames || cartItemNames.length === 0) {
+            return [];
+        }
+
+        try {
+            return await this.request('/ml/recommendations/ml', {
+                method: 'POST',
+                body: JSON.stringify({
+                    phone: phone,
+                    current_cart: cartItemNames,
+                    limit: 10
+                })
+            });
+        } catch (error) {
+            console.warn('ML recommendations unavailable:', error);
+            return null;
         }
     }
 }

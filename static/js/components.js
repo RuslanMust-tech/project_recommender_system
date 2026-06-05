@@ -180,17 +180,13 @@ class CartComponent {
         this.container.innerHTML = `
             <h2>Корзина</h2>
             <ul class="cart-items">${cartItemsHtml}</ul>
-            
-            <div class="cart-section utensils-section">
-                <h3>Приборы</h3>
-                <div class="utensils-list">${utensilsHtml}</div>
-                <p class="eco-note">Спасибо, что заботитесь об экологии и не заказываете приборы!</p>
+
+            <div class="cart-section recommendations-section">
+                <h3>Рекомендуем к заказу</h3>
+                <div id="cart-recommendations" class="recommendations-list"></div>
             </div>
-            
-            <div class="cart-section sauces-section">
-                <h3>Не забудьте добавки и соусы</h3>
-                <div class="sauces-list">${saucesHtml}</div>
-            </div>
+
+            <div id="ml-recommendations-container" class="cart-section"></div>
             
             <div class="cart-footer">
                 <strong class="cart-total">${total} ₽</strong>
@@ -202,6 +198,17 @@ class CartComponent {
         if (checkoutBtn) {
             checkoutBtn.onclick = () => this.checkout();
         }
+
+        this.loadRecommendations(cart);
+        this.loadMLRecommendations(cart);
+    }
+
+    async loadMLRecommendations(cart) {
+        const container = document.getElementById('ml-recommendations-container');
+        if (!container || cart.length === 0) return;
+
+        const mlComponent = new window.MLRecommendationComponent(container, this.store);
+        await mlComponent.loadAndRender(cart);
     }
 
     updateCartCount(cart) {
@@ -228,6 +235,157 @@ class CartComponent {
         await this.store.addSauce(sauceId);
     }
 
+    async loadRecommendations(cart) {
+        const container = this.container?.querySelector('#cart-recommendations');
+        if (!container) return;
+
+        const itemIds = [...new Set(cart.map(item => item.id).filter(id => id != null))];
+        if (itemIds.length === 0) {
+            container.innerHTML = '<p class="muted">Добавьте товары в корзину, чтобы увидеть рекомендации.</p>';
+            return;
+        }
+
+        try {
+            const phone = this.store.state.currentUser?.phone || null;
+            const data = await window.api.getCartRecommendations(itemIds, phone);
+            this.renderRecommendations(container, data);
+        } catch (error) {
+            console.error('Failed to load recommendations:', error);
+            container.innerHTML = '<p class="muted">Рекомендации временно недоступны.</p>';
+        }
+    }
+
+    renderRecommendations(container, data) {
+
+        const renderCard = (item, badge) => `
+            <div class="recommendation-card">
+
+                <div class="recommendation-content">
+
+                    <div class="recommendation-top">
+
+                        <div class="recommendation-name">
+                            ${item.name}
+                        </div>
+
+                        <button
+                            class="recommendation-price-btn"
+                            onclick="window.cartComponent.addRecommendation(${item.id})"
+                        >
+                            + ${item.price_rub || 0} ₽
+                        </button>
+
+                    </div>
+
+                    <div class="recommendation-reason">
+                        ${item.reason || ''}
+                    </div>
+
+                    <div class="recommendation-tag">
+                        ${badge}
+                    </div>
+
+                </div>
+
+            </div>
+        `;
+
+        const personal = (data.personal_repeats || [])
+            .slice(0, 3)
+            .map(item => renderCard(item, '⭐ Вы уже брали'))
+            .join('');
+
+        const association = (data.frequently_bought_together || [])
+            .slice(0, 3)
+            .map(item => renderCard(item, '🔥 Часто добавляют'))
+            .join('');
+
+        const addons = (data.category_addons || [])
+            .slice(0, 3)
+            .map(item => renderCard(item, '➕ Подходит к заказу'))
+            .join('');
+
+        const combos = (data.combos || [])
+            .slice(0, 2)
+            .map(combo => `
+                <div class="recommendation-combo-card">
+                    <div class="recommendation-combo-title">
+                        🍱 ${combo.title}
+                    </div>
+
+                    <div class="recommendation-combo-items">
+                        ${combo.items.map(i => i.name).join(' + ')}
+                    </div>
+
+                    <div class="recommendation-combo-reason">
+                        ${combo.reason}
+                    </div>
+                </div>
+            `)
+            .join('');
+
+        container.innerHTML = `
+            ${association ? `
+            <div class="recommendation-section">
+                <h4>🔥 Часто добавляют к такому заказу</h4>
+                ${association}
+            </div>
+            ` : ''}
+
+            ${personal ? `
+            <div class="recommendation-section">
+                <h4>⭐ Вы уже заказывали</h4>
+                ${personal}
+            </div>
+            ` : ''}
+
+            ${addons ? `
+            <div class="recommendation-section">
+                <h4>➕ Может пригодиться</h4>
+                ${addons}
+            </div>
+            ` : ''}
+
+        `;
+
+    }
+
+    async addRecommendation(productId, productName) {
+        let product = null;
+
+        // Сначала ищем по ID
+        if (productId && !isNaN(productId)) {
+            product = this.store.state.products.find(item => item.id === productId);
+        }
+
+        // Если не нашли по ID, ищем по имени
+        if (!product && productName) {
+            product = this.store.state.products.find(item => item.name === productName);
+        }
+
+        // Если всё ещё не нашли, ищем по ID из строки (для ML рекомендаций)
+        if (!product && productId && typeof productId === 'string') {
+            const numId = parseInt(productId);
+            if (!isNaN(numId)) {
+                product = this.store.state.products.find(item => item.id === numId);
+            }
+        }
+
+        if (product) {
+            await this.store.addToCart(product);
+        } else {
+            console.warn(`Product not found: ID=${productId}, Name=${productName}`);
+        }
+    }
+
+    showNotification(message, type = 'success') {
+        const toast = document.createElement('div');
+        toast.className = `toast-notification ${type}`;
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 2000);
+    }
+
     async checkout() {
         if (this.store.state.cart.length === 0) {
             alert('Корзина пуста');
@@ -240,13 +398,77 @@ class CartComponent {
         }
 
         try {
-            const order = await this.store.createOrder();
-            alert(`Ваш заказ оформлен!\nНомер заказа: ${order.id}\nСумма: ${order.total} ₽`);
+            const result = await this.store.createOrder();
             const cartModal = document.getElementById('cartModal');
             if (cartModal) cartModal.style.display = 'none';
         } catch (error) {
-            alert('Ошибка при оформлении заказа: ' + error.message);
         }
+    }
+}
+
+class MLRecommendationComponent {
+    constructor(container, store) {
+        this.container = container;
+        this.store = store;
+    }
+
+    async loadAndRender(cartItems) {
+        if (!this.container) return;
+
+        // Extract product names from cart items
+        const cartNames = cartItems.map(item => item.name).filter(Boolean);
+        if (cartNames.length === 0) {
+            this.container.innerHTML = '';
+            return;
+        }
+
+        try {
+            const phone = this.store.state.currentUser?.phone || null;
+
+            const response = await window.api.getMLRecommendations(cartNames, phone);
+
+            if (!response || !response.recommendations || response.recommendations.length === 0) {
+                this.container.innerHTML = '';
+                return;
+            }
+
+            this.render(response);
+        } catch (error) {
+            console.error('ML recommendations error:', error);
+            this.container.innerHTML = '';
+        }
+    }
+
+    render(data) {
+        const recs = data.recommendations || [];
+        if (recs.length === 0) {
+            this.container.innerHTML = '';
+            return;
+        }
+
+        const cardsHtml = recs.map(rec => {
+            const confidence = (rec.confidence * 100).toFixed(0);
+            return `
+                <div class="ml-recommendation-card">
+                    <div class="ml-rec-badge">🤖 AI ${confidence}%</div>
+                    <div class="ml-rec-name">${rec.name}</div>
+                    <div class="ml-rec-category">${rec.category}</div>
+                    <button class="ml-rec-btn" onclick="window.cartComponent.addRecommendation(${rec.id}, '${rec.name.replace(/'/g, "\\'")}')">
+                        + ${rec.price_rub} ₽
+                    </button>
+                </div>
+            `;
+        }).join('');
+
+        this.container.innerHTML = `
+            <div class="ml-recommendations-section">
+                <h4>🤖 Рекомендации ИИ</h4>
+                <div class="ml-recommendations-grid">
+                    ${cardsHtml}
+                </div>
+                <div class="ml-source-info">${data.source}</div>
+            </div>
+        `;
     }
 }
 
@@ -349,4 +571,5 @@ class UserPanel {
 window.ProductsGrid = ProductsGrid;
 window.CategoriesFilter = CategoriesFilter;
 window.CartComponent = CartComponent;
+window.MLRecommendationComponent = MLRecommendationComponent;
 window.UserPanel = UserPanel;

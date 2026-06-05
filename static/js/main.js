@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoriesContainer = document.getElementById('categoryFilter');
     const cartContainer = document.getElementById('cart-items-container');
     const userPanelContainer = document.getElementById('userPanel');
+    const mlRecommendationsContainer = document.getElementById('ml-recommendations-container');
 
     window.productsGrid = new window.ProductsGrid(productsContainer, window.store);
     window.cartComponent = new window.CartComponent(cartContainer, window.store);
     window.userPanel = new window.UserPanel(userPanelContainer, window.store);
+    window.mlRecommendationComponent = new window.MLRecommendationComponent(mlRecommendationsContainer, window.store);
 
     new window.CategoriesFilter(categoriesContainer, window.store, (category) => {
         if (window.productsGrid) {

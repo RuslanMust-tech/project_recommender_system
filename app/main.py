@@ -2,12 +2,37 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
+import logging
 
 from app.api.api_v1 import api_router
 from app.core.config import get_settings
 from app.db.admin import setup_admin
 
+logger = logging.getLogger(__name__)
+
 settings = get_settings()
+
+# Создаем директории для статических файлов, если их нет
+static_dir = Path("static")
+static_dir.mkdir(exist_ok=True)
+
+app = FastAPI(title=settings.app_name, version="0.1")
+
+# Подключаем API роутеры
+app.include_router(api_router, prefix="/api/v1")
+
+
+@app.on_event("startup")
+async def startup_event():
+    """Initialize ML service on startup if enabled."""
+    if settings.ml_enabled:
+        try:
+            from app.ml.ml_service import MLRecommendationServiceFactory
+            MLRecommendationServiceFactory.get_service(settings.ml_model_dir)
+            logger.info("ML service initialized on startup")
+        except Exception as e:
+            logger.warning(f"ML service initialization failed (non-critical): {e}")
+
 
 # Создаем директории для статических файлов, если их нет
 static_dir = Path("static")
@@ -32,6 +57,17 @@ async def root():
         return HTMLResponse(content="<h1>index.html not found</h1><p>Please make sure index.html exists in the project root or templates folder.</p>", status_code=404)
     
     with open(index_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    return HTMLResponse(content=content)
+
+
+@app.get("/analytics", response_class=HTMLResponse)
+async def analytics_page():
+    analytics_path = Path("templates/analytics.html")
+    if not analytics_path.exists():
+        return HTMLResponse(content="<h1>analytics.html not found</h1>", status_code=404)
+
+    with open(analytics_path, "r", encoding="utf-8") as f:
         content = f.read()
     return HTMLResponse(content=content)
 
